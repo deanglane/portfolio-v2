@@ -1,16 +1,71 @@
-# React + Vite
+## Portfolio v2.0.0.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Scope
 
-Currently, two official plugins are available:
+### Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Features
 
-## React Compiler
+#### MVP Features List
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- About me section
+- Showcase projects
+- Contact me section
 
-## Expanding the ESLint configuration
+#### Stretch Goals Features List
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##### Version Update
+
+2.0.0.0
+[ ] Update previous portfolio to react vite
+[ ] Add about me section
+[ ] Router navigation with static navigation bar
+[ ] Add Tech stack section
+[ ] Add List of Projects (temporary until a new showcase design has been designed)
+[ ] Contact section
+
+###### Roadmap
+
+v:2.0.1.0 Revision build - Add Missing Projects Update
+
+1. Add Shopify stopwatch to the app section
+   - Git hub repo and live project through netlify
+2. Add Tappy Plane Game
+
+- v:2.0.2.0 - Revision build - Add Missing Projects Update
+
+  1. Fix Game description page
+     - include a back button
+     - Theme for site
+  2. Come up with a better theme
+
+- v:2.1.0.0 - Minor build - Auth private section
+  1. Add a new admin section for client access
+
+##### Tech Stack
+
+- React Vite
+- Typescript
+- Html
+- CSS Modules
+- Firebase
+
+images of the tech used
+
+The application exhibits mobile responsiveness and incorporates accessibility functionalities.
+
+Live deployment link
+Video Demo
+
+Mobile View:- screenshot
+
+### Dependencies List
+
+```json
+"dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
+  },
+
+```
