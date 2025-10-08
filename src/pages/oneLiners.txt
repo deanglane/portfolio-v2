@@ -1,0 +1,62 @@
+<header>
+        <p>
+          “Hi, I’m Dean The Day off Chef— I build websites, solve problems, and
+          occasionally invent things no one asked for.” Creative coder &
+          designer turning ideas into experiences.
+        </p>
+        <p>“Stirring ideas, sautéing pixels, and seasoning stories.”</p>
+        <p>
+          “I’m creative, I make things, I experiment, and I live life like every
+          day’s my day off.”
+        </p>
+      </header>
+
+      <main>
+        <section>
+          <p>
+            Visuals: Hand-drawn UI elements (sketch-style outlines). Animated
+            gears or blueprints in the background. Subtle hover animations like
+            light bulbs flicking on. Vibe: Playful, clever, hands-on creative
+            energy.
+          </p>
+          <p>“From frying pans to front-ends.”</p>
+          <p>“Part chef, part coder, full-time creative.”</p>
+          <p>“I create things that look good — on screen and on a plate.”</p>
+          <p>“Equipped with a camera, keyboard, and a cast-iron pan.”</p>
+        </section>
+
+        <section>
+          <p>“Designing digital campfires where creativity sparks.”</p>
+        </section>
+
+        <section>
+          <p>“Turning coffee and curiosity into code.”</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Web developer, designer, and outdoor enthusiast. Yes, I can debug by
+          lantern light.”
+        </p>
+        <p>
+          “Not all who wander are lost — some are just finding the next great
+          idea.”
+        </p>
+        <ul>
+          <li>“I turn pixels, code, and caffeine into experiences.”</li>
+          <li>“I design stuff that looks good and works even better.”</li>
+          <li>
+            “From the kitchen to the keyboard — I make things that look
+            delicious.”
+          </li>
+          <li>
+            “I promise your project won’t look like it was made in the 90s.”
+          </li>
+          <li>“Hello world — let’s make something cool today.”</li>
+          <li>“Capturing food before it disappears.”</li>
+          <li>“Cooking, coding, and catching the light just right.”</li>
+          <li>“Ctrl + Alt + Delicious.”</li>
+          <li>“Cooking and coding — one typo at a thyme.”</li>
+        </ul>
+      </footer>
