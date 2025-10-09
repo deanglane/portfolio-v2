@@ -1,0 +1,7 @@
+.footer {
+  background: var(--cafe-foam);
+  color: color-mix(in srgb, var(--walnut) 80%, transparent);
+  border-top: 1px solid var(--cinnamon);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}

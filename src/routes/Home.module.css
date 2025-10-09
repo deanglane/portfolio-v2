@@ -1,4 +1,4 @@
-.main_container {
+main {
   /* border: 1px solid red; */
   height: 75vh;
 }
@@ -6,9 +6,4 @@
 .hero {
   /* border: 1px solid green; */
   /* height: 5vh; */
-}
-
-footer {
-  /* border: 1px solid blue; */
-  height: 10vh;
 }
