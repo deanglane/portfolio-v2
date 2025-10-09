@@ -1,14 +1,14 @@
 .main_container {
-  border: 1px solid red;
-  height: 90vh;
+  /* border: 1px solid red; */
+  height: 75vh;
 }
 
 .hero {
-  border: 1px solid green;
-  height: 5vh;
+  /* border: 1px solid green; */
+  /* height: 5vh; */
 }
 
-section {
-  border: 1px solid blue;
-  height: 20vh;
+footer {
+  /* border: 1px solid blue; */
+  height: 10vh;
 }

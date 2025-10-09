@@ -13,21 +13,6 @@ function Home() {
             energy.
           </p>
         </section>
-
-        {/* About me */}
-        <section>
-          <p>“From frying pans to front-ends.”</p>
-        </section>
-
-        {/* Tech stack */}
-        <section>
-          <p>“Turning coffee and curiosity into code.”</p>
-        </section>
-
-        {/* Projects */}
-        <section>
-          <p>“Turning coffee and curiosity into code.”</p>
-        </section>
       </main>
     </>
   );

@@ -3,7 +3,11 @@ import "./App.css";
 
 // pages imports
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
+import Teckstack from "./pages/Techstack";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 // components imports
 import Navigation from "./components/Navigation";
@@ -22,7 +26,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="about" element={<About />} />
+          <Route path="techstack" element={<Teckstack />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </main>
       <footer>
