@@ -6,69 +6,83 @@
 
 #### Features
 
-##### Version Update
+#### Version Update
 
-Estimated launch date - NOV '25
+**Estimated launch date:** NOV '25
 
-2.0.0.0
-MVP
-[X] Update previous portfolio to react vite
-[X] Rethink theme and colour
-[X] Router navigation with static navigation bar
-[ ] Update about me section
-[ ] Update Tech stack section
-[ ] Add List of Projects (temporary until a new showcase design has been designed)
-[ ] Basic Contact section
-[ ] New domain name
-[ ]
+**Version:** 2.0.0.0 (MVP)
 
-Stretch goals
-[ ] Animations
-[ ] Contact form
-[ ]
+- [x] Update previous portfolio to React Vite
+- [x] Rethink theme and colour
+- [x] Router navigation with static navigation bar
+- [ ] Update About Me section
+- [ ] Update Tech Stack section
+- [ ] Add List of Projects (temporary until a new showcase design has been designed)
+- [ ] Basic Contact section
+- [ ] New domain name
 
-###### Roadmap
+**Stretch Goals**
 
-v:2.0.1.0 Revision build - Add Missing Projects Update - JAN '26
+- [ ] Animations
+- [ ] Contact form
 
-1. Add Shopify stopwatch to the app section
-   - Git hub repo and live project through netlify
+---
+
+#### Roadmap
+
+**v2.0.1.0 — Revision Build**  
+_Add Missing Projects Update — JAN '26_
+
+1. Add Shopify Stopwatch to the app section
+   - Include GitHub repo and live project via Netlify
 2. Add Tappy Plane Game
 
-- v:2.0.2.0 - Revision build - Add Missing Projects Update - FEB '26
+---
 
-  1. Fix Game description page
-     - include a back button
-     - Theme for site
-  2. Come up with a better theme
+**v2.0.2.0 — Revision Build**  
+_Add Missing Projects Update — FEB '26_
 
-- v:2.1.0.0 - Minor build - Auth private section - MAR '26
-  1. Add a new admin section for client access
+1. Fix Game description page
+   - Include a back button
+   - Update theme for site
+2. Develop improved theme concept
 
-##### Tech Stack
+---
+
+**v2.1.0.0 — Minor Build**  
+_Auth private section — MAR '26_
+
+1. Add a new admin section for client access
+
+---
+
+#### Tech Stack
 
 - React Vite
-- Typescript
-- Html
+- TypeScript
+- HTML
 - CSS Modules
 - Firebase
 
-images of the tech used
+_Images of the technologies used._
 
-The application exhibits mobile responsiveness and incorporates accessibility functionalities.
+---
 
-Live deployment link
-Video Demo
+The application exhibits **mobile responsiveness** and incorporates **accessibility functionalities**.
 
-Mobile View:- screenshot
+**Live Deployment:** _(link here)_  
+**Video Demo:** _(link here)_
+
+**Mobile View:** _(screenshot here)_
+
+---
 
 ### Dependencies List
 
 ```json
 "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.0"
-  },
-
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.22.0"
+}
 ```
