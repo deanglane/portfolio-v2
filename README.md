@@ -45,29 +45,22 @@
 
 #### Roadmap
 
-**v2.0.1.0 — Revision Build**  
-_Add Missing Projects Update — JAN '26_
+- v: 2.0.0.0 - Major build - Convert Update
 
-1. Add Shopify Stopwatch to the app section
-   - Include GitHub repo and live project via Netlify
-2. Add Tappy Plane Game
-
----
-
-**v2.0.2.0 — Revision Build**  
-_Add Missing Projects Update — FEB '26_
-
-1. Fix Game description page
-   - Include a back button
-   - Update theme for site
-2. Develop improved theme concept
-
----
-
-**v2.1.0.0 — Minor Build**  
-_Auth private section — MAR '26_
-
-1. Add a new admin section for client access
+- v:2.0.1.0 - Revision build - Add Missing Projects Update
+  - [ ] Promoted
+  1. Add Shopify stopwatch to the app section
+     - Git hub repo and live project through netlify
+  2. Add Tappy Plane Game
+- v:2.0.2.0 - Revision build - Add Missing Projects Update
+  - [ ] Promoted
+  1. Fix Game description page
+     - include a back button
+     - Theme for site
+  2. Come up with a better theme
+- v:2.1.0.0 - Minor build - Password Section
+  - [ ] Promoted
+  1. Add Auth to the site
 
 ---
 
