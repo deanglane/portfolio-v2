@@ -1,0 +1,29 @@
+/* Use :root to define global variables for colors, fonts, and other values that might be reused throughout your stylesheets. */
+:root {
+  /* colour theme */
+  /* Background layers */
+  --main-body-background: #f9e5c0;
+  --alternate-section-background: #e4ede3;
+  /* Typography */
+  --headings-section-titles: #6c2a4a;
+  --bodyText-longCopy: #634b42;
+  --links-emphasis: #e16041;
+  /* Buttons & Calls-to-Action */
+  --primary-button: #e16041;
+  --hover-active: #9b6a43;
+  --outline-button: #f9e5c0;
+  /* Cards / Containers */
+  --card-background: #ffffff;
+  --card-border-dividers: #e6d5c3;
+  --card-text: #634b42;
+  --card-icons-tags: #6c2a4a;
+  /* Icons & decorative elements */
+  --ui-glyphs: #a9b79e;
+
+  /* Fonts */
+  --font-Nunito: "Nunito Sans", sans-serif;
+  --font-Bobby: "Bobby Jones Soft", sans-serif;
+  --font-bobbyRoughSoftOutline: "Bobby Rough Soft Outline", sans-serif;
+  --font-size: 1rem;
+  --font-Heading: var(--font-bobbyRoughSoftOutline);
+}

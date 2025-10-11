@@ -1,0 +1,52 @@
+/* Normalize browser defaults first */
+@import "normalize.css";
+@import "./_variables.css";
+@import "./_typography.css";
+
+/* You can apply styles to the html element, such as setting a default font size or other high-level styles. */
+html {
+  font-size: 125%;
+}
+
+/* Use a wildcard * selector to apply a basic CSS reset or normalize styles to ensure consistent rendering across browsers. */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%; /* Makes all images become responsive if the parent container wants to shrink */
+  display: block; /* removes extra padding at bottom of images */
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
