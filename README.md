@@ -26,6 +26,36 @@
 - [ ] Animations
 - [ ] Contact form
 
+1. Convert Original portfolio over to React vite
+   - [x] Set up project
+   - [x] Install router
+   - [x] Choose a new theme (colour & Fonts)
+   - [x] New domain name
+   - [x] Assets
+     - [x] Import all old assets
+   - [x] Colour and fonts
+     - [x] Add new colour theme to global.css varibales
+     - [x] Import new fonts and add them to global.css variables
+     - [ ] Add correct fonts and styles to content on bage
+   - [ ] Navigation Bar
+     - [ ] Style links
+     - [ ] Bring in logo
+     - [ ] make responsive
+   - [ ] Project page
+     - [ ] Bring all project over in a simple format
+   - [ ] About me
+   - [ ] Contact me
+     - [ ] Simple contact me [hello@dayoffdev.com](mailto:hello@dayoffdev.com)
+   - [ ] Home Hero page
+   - [ ] Blog page
+     - [ ] Coming soon
+   - [ ] Tech Stack - Resume (rename)
+     - [ ] Resume of work experience and study
+   - [ ] Netlify build
+     - [ ] Launch
+   - [ ] Github clean up for next build update
+   - [ ] Promoted
+
 ---
 
 #### Roadmap
