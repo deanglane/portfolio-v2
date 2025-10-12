@@ -3,6 +3,52 @@ import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import FeatureCard from "../components/FeatureCard";
+import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
+
+const features = [
+  {
+    id: 1,
+    title: "Pokedex",
+    desc: "A pokemon pokedex gameboy built using custom css styles and Pokemon API",
+    image: pokedex,
+    alt: "A pokemon pokedex application",
+    button: "/projects",
+  },
+  {
+    id: 2,
+    title: "Tappy Plane",
+    desc: "A fun little browser game",
+    image: "",
+    alt: "Tappy Plane Screenshot",
+    button: "/projects",
+  },
+  {
+    id: 3,
+    title: "Portfolio v2",
+    desc: "The site you're on!",
+    image: "",
+    alt: "My website",
+    button: "/projects",
+  },
+  {
+    id: 4,
+    title: "More News",
+    desc: "read the latest articles",
+    image: "",
+    alt: "news headlines",
+    button: "/blog",
+  },
+  { id: 5, title: "Day Off Blog", desc: "read my blog" },
+  {
+    id: 6,
+    title: "Sign up for newsletter",
+    desc: "subscript to the newsletter",
+    image: "",
+    alt: "newletter and articles",
+    button: "/blog",
+  },
+];
 
 function Home() {
   return (
@@ -37,8 +83,8 @@ function Home() {
                   slidesPerView={1}
                   breakpoints={{
                     640: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
+                    768: { slidesPerView: 1 },
+                    1024: { slidesPerView: 1 },
                   }}
                   loop={true}
                   autoplay={{
@@ -49,13 +95,19 @@ function Home() {
                   onSlideChange={() => console.log("slider change")}
                   onSwiper={(swiper) => console.log(swiper)}
                 >
-                  <SwiperSlide>Slide 1</SwiperSlide>
-                  <SwiperSlide>Slide 2</SwiperSlide>
-                  <SwiperSlide>Slide 3</SwiperSlide>
-                  <SwiperSlide>Slide 4</SwiperSlide>
+                  {features.map((f) => (
+                    <SwiperSlide key={f.id}>
+                      <FeatureCard
+                        title={f.title}
+                        description={f.desc}
+                        image={f.image}
+                        alt={f.alt}
+                        button={f.button}
+                      />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
-              <div className={styles.feature_desc}>feature description</div>
             </div>
           </div>
         </section>
@@ -65,11 +117,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <p>☕</p>
-    <p>
-      A comfy hero visual goes here — maybe a looping reel of
-      sites, games, and food shots.
-    </p> */
-}

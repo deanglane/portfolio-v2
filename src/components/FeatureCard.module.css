@@ -1,0 +1,15 @@
+.feature_card {
+  outline: 2px solid red;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  /* padding: 1rem; */
+  height: 280px;
+}
+
+.image_container img {
+  height: 100%;
+  border-radius: 1rem;
+}

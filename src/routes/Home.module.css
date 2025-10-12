@@ -51,6 +51,7 @@ main {
   background-color: #ffffff;
   border-radius: 1rem;
   width: 100%;
+  min-height: clamp(260px, 45vh, 520px); /* New height set */
   display: flex;
   flex-direction: column;
   -webkit-box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.52);
@@ -63,6 +64,8 @@ main {
   border-radius: 1rem;
   margin: 0;
   min-width: 0;
+  display: flex;
+  flex: 1 1 0;
 }
 
 /* Scope Swiper classes through :global because you're in CSS Modules */
@@ -70,8 +73,9 @@ main {
   align-items: stretch;
 }
 
-card_foreground :global(.swiper) {
+.card_foreground :global(.swiper) {
   width: 100%;
+  height: 100%; /* NEW*/
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
@@ -81,23 +85,5 @@ card_foreground :global(.swiper) {
   align-items: center;
   justify-content: center;
   min-width: 0;
-}
-
-.card_foreground p:nth-of-type(1) {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-DarkCocoa);
-  margin-bottom: 0.25rem;
-}
-
-.card_foreground p:nth-of-type(2) {
-  text-align: center;
-}
-
-.feature_desc {
-  margin: 0 1.2rem 1.2rem 1.2rem;
+  height: 100%; /* NEW*/
 }
