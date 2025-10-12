@@ -33,6 +33,10 @@
 - [ ] Contact me
   - [ ] Simple contact me
 - [ ] Home Hero page
+  - [ ] Design hero section
+  - [ ] Style hero section
+  - [ ] Add a sliding project gallery to the hero card
+  - [ ] include an extra section for more projects as per spec
 - [ ] Blog page
   - [ ] Coming soon
 - [ ] Tech Stack - Resume (rename)

@@ -1,5 +1,8 @@
 import styles from "./Home.module.css";
 import { NavLink } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 function Home() {
   return (
@@ -28,11 +31,29 @@ function Home() {
           <div className={styles.feature_reel_container}>
             <div className={styles.card_background}>
               <div className={styles.card_foreground}>
-                <p>☕</p>
-                <p>
-                  A comfy hero visual goes here — maybe a looping reel of sites,
-                  games, and food shots.
-                </p>
+                <Swiper
+                  modules={[Autoplay]}
+                  spaceBetween={16}
+                  slidesPerView={1}
+                  breakpoints={{
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                  }}
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
+                  }}
+                  onSlideChange={() => console.log("slider change")}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  <SwiperSlide>Slide 1</SwiperSlide>
+                  <SwiperSlide>Slide 2</SwiperSlide>
+                  <SwiperSlide>Slide 3</SwiperSlide>
+                  <SwiperSlide>Slide 4</SwiperSlide>
+                </Swiper>
               </div>
               <div className={styles.feature_desc}>feature description</div>
             </div>
@@ -44,3 +65,11 @@ function Home() {
 }
 
 export default Home;
+
+{
+  /* <p>☕</p>
+    <p>
+      A comfy hero visual goes here — maybe a looping reel of
+      sites, games, and food shots.
+    </p> */
+}
