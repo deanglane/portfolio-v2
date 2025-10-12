@@ -50,3 +50,26 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-button);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-active);
+  transform: translateY(-2px);
+}
+
+.button_transparent {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
