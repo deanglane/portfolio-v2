@@ -15,7 +15,7 @@ function Navigation() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/portfolio">projects</NavLink>
+          <NavLink to="/projects">projects</NavLink>
         </li>
         <li>
           <NavLink to="/about">about</NavLink>

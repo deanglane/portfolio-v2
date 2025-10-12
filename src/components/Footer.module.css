@@ -1,7 +1,30 @@
 .footer {
-  background: var(--cafe-foam);
-  color: color-mix(in srgb, var(--walnut) 80%, transparent);
-  border-top: 1px solid var(--cinnamon);
-  padding: 2rem 1rem;
-  margin-top: 2rem;
+  background: var(--background-DarkCocoa);
+  color: var(--text-CremeBrulee);
+  height: 25vh;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.contact p {
+  font-size: 0.9rem;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid red;
+}
+
+.menu li {
+  padding: 0.25rem;
+}
+
+.tagLine p {
+  padding: 0.25rem;
 }

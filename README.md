@@ -21,11 +21,12 @@
 - [x] Colour and fonts
   - [x] Add new colour theme to global.css varibales
   - [x] Import new fonts and add them to global.css variables
-  - [ ] Add correct fonts and styles to content on bage
+  - [ ] Add correct fonts and styles to content on page
 - [ ] Navigation Bar
   - [ ] Style links
   - [ ] Bring in logo
   - [ ] make responsive
+  - [ ] Dropdown menu for sub navigation
 - [ ] Project page
   - [ ] Bring all project over in a simple format
 - [ ] About me
@@ -89,6 +90,7 @@ The application exhibits **mobile responsiveness** and incorporates **accessibil
 
 ```json
 "dependencies": {
+  "normalize.css": "^8.0.1",
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
   "react-router-dom": "^6.22.0"
