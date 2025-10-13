@@ -1,16 +1,24 @@
 ## Portfolio v2.0.0.0
 
-### Scope
+### Scope.
+
+Design a portfolio website that not only features all my projects ranging from frontend web development, indie gaming and photography but also allows my to test adn experiment with new features while I learn more about coding.
 
 ### Project Overview
 
 #### Features
 
-#### Version Update
+- Project section for showcasing previous projects
+- Blog sections for my journey into coding and other projects
+- Fully responsive and viewable on all mobile and tablet devices
+- Authentication area for admin users
+- some little hidden details, wink wink
+
+#### Version Updates
 
 **Estimated launch date:** NOV '25
 
-**Version:** 2.0.0.0 (MVP) - Major build - Convert Update
+**Version:** 2.0.0.0 (MVP) - Major build - React Convert Update
 
 - [x] Set up project
 - [x] Install router
@@ -19,16 +27,18 @@
 - [x] Assets
   - [x] Import all old assets
 - [x] Colour and fonts
-  - [x] Add new colour theme to global.css varibales
+  - [x] Add new colour theme to global.css variables
   - [x] Import new fonts and add them to global.css variables
   - [x] Add correct fonts and styles to content on page
 - [ ] Navigation Bar - basic
-  - [ ] Style links
-  - [ ] Bring in logo
+  - [ ] Add better styling, hover and accessibility to links
+  - [ ] Make a better logo and add to the abr
   - [ ] make responsive
 - [ ] Project page
-  - [ ] Bring all project over in a simple format
+  - [ ] Bring all project over in a simple list format
+  - [ ] Coming Soon section (turnupthatbeet.com)
 - [ ] About me
+  - [ ] A quick summary of who I am and skills
 - [ ] Contact me
   - [ ] Simple contact me
 - [ ] Home Hero page
@@ -37,10 +47,11 @@
   - [x] Add a sliding project gallery to the hero card
   - [ ] add pagination to the slider
   - [ ] include an extra section for more projects as per spec
-- [ ] Blog page
-  - [ ] Coming soon
 - [ ] Tech Stack - Resume (rename)
-  - [ ] Resume of work experience and study
+  - [ ] Resume of work experience and study (tech stack)
+- [ ] Social media links
+- [ ] Make the site responsive
+- [ ] Review accessibility
 - [ ] Netlify build
   - [ ] Launch
 - [ ] Github clean up for next build update
@@ -53,15 +64,22 @@
 - v:2.0.1.0 - Revision build - Add Missing Projects and Navigation Menu Update - December '25
   1. Add All missing projects (only working code)
   2. Dropdown menus for Specific links
+  3. Updated screenshots for projects
 - v:2.0.2.0 - Revision build - Game page Update - January '25
   1. Fix Game description page
-     - include a back button
      - Theme for site
+     - include a back button
   2. Add missing games
   3. Come up with a better theme
-  4. tie into dayofgames.com site (forwarding)
-- v:2.1.0.0 - Minor build - Password Section - March '25
-  1. Add Auth to the site
+  4. Future state - separate game studio page dayoffgames.com
+- v:2.0.3.0 - Better Graphics update February '26.  
+  Creating better images for each page including:
+  1. Better screenshots/gallery of projects
+  2. glyths for pages
+  3. profile image
+  4. logo redesign
+- v:2.1.0.0 - Minor build - Password Section - March '26
+  1. Add Auth area to the site
 
 ---
 
@@ -70,8 +88,7 @@
 - React Vite
 - TypeScript
 - HTML
-- CSS Modules
-- Firebase
+- CSS
 
 _Images of the technologies used._
 
