@@ -5,6 +5,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import FeatureCard from "../components/FeatureCard";
 import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
+import flashIt from "../assets/images/screen-shots/flash_it_new.png";
+import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
 
 const features = [
   {
@@ -17,18 +19,18 @@ const features = [
   },
   {
     id: 2,
-    title: "Tappy Plane",
-    desc: "A fun little browser game",
-    image: "",
+    title: "Flash It",
+    desc: "Build your own flash cards for study",
+    image: flashIt,
     alt: "Tappy Plane Screenshot",
     button: "/projects",
   },
   {
     id: 3,
-    title: "Portfolio v2",
-    desc: "The site you're on!",
-    image: "",
-    alt: "My website",
+    title: "Hangry Tummy",
+    desc: "My first Frontend Website project converting a pdf design into a fully functioning site",
+    image: hangryTummy,
+    alt: "Hangry Tummy website",
     button: "/projects",
   },
   {
@@ -37,15 +39,6 @@ const features = [
     desc: "read the latest articles",
     image: "",
     alt: "news headlines",
-    button: "/blog",
-  },
-  { id: 5, title: "Day Off Blog", desc: "read my blog" },
-  {
-    id: 6,
-    title: "Sign up for newsletter",
-    desc: "subscript to the newsletter",
-    image: "",
-    alt: "newletter and articles",
     button: "/blog",
   },
 ];

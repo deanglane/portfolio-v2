@@ -29,6 +29,9 @@ function Navigation() {
         <li>
           <NavLink to="/contact">contact</NavLink>
         </li>
+        <li>
+          <NavLink to="/workshop">workshop</NavLink>
+        </li>
       </ul>
     </nav>
   );

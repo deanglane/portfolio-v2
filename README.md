@@ -21,7 +21,7 @@
 - [x] Colour and fonts
   - [x] Add new colour theme to global.css varibales
   - [x] Import new fonts and add them to global.css variables
-  - [ ] Add correct fonts and styles to content on page
+  - [x] Add correct fonts and styles to content on page
 - [ ] Navigation Bar
   - [ ] Style links
   - [ ] Bring in logo
@@ -33,9 +33,10 @@
 - [ ] Contact me
   - [ ] Simple contact me
 - [ ] Home Hero page
-  - [ ] Design hero section
-  - [ ] Style hero section
-  - [ ] Add a sliding project gallery to the hero card
+  - [x] Design hero section
+  - [x] Style hero section
+  - [x] Add a sliding project gallery to the hero card
+  - [ ] add pagination to the slider
   - [ ] include an extra section for more projects as per spec
 - [ ] Blog page
   - [ ] Coming soon
