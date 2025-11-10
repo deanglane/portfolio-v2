@@ -1,0 +1,16 @@
+.specials-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+}
+
+.specials-viewport {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
+  display: flex;
+  padding: 0.5rem;
+}

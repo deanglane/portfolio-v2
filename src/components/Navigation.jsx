@@ -1,6 +1,7 @@
 import styles from "./Navigation.module.css";
 
 import { NavLink } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function Navigation() {
   return (
@@ -15,7 +16,8 @@ function Navigation() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects">projects</NavLink>
+          <NavLink to="/projects">projects ▼</NavLink>
+          {/* <Dropdown /> */}
         </li>
         <li>
           <NavLink to="/about">about</NavLink>

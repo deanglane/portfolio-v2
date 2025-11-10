@@ -52,9 +52,11 @@ Design a portfolio website that not only features all my projects ranging from f
 - [ ] Social media links
 - [ ] Make the site responsive
 - [ ] Review accessibility
+- [ ] Review code, remove all console logs, comment where needed
 - [ ] Netlify build
   - [ ] Launch
 - [ ] Github clean up for next build update
+- [ ] Look into implementing React Aria
 
 ---
 
@@ -108,8 +110,9 @@ The application exhibits **mobile responsiveness** and incorporates **accessibil
 ```json
 "dependencies": {
   "normalize.css": "^8.0.1",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "react-router-dom": "^6.22.0"
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "react-router-dom": "^7.9.3",
+  "swiper": "^12.0.2"
 }
 ```

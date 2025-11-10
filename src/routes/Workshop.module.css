@@ -2,6 +2,9 @@ section p {
   margin-bottom: 2rem;
 }
 
+.slides-div {
+  margin-bottom: 2rem;
+}
 /* slider work area */
 .slides-container {
   width: 100%;
@@ -24,4 +27,23 @@ section p {
   border: 2px solid #ffffff;
   display: flex;
   padding: 0.5rem;
+}
+
+.megaDD-div {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.dropdown-container {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-container.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }

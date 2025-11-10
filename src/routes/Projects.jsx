@@ -1,32 +1,51 @@
 import React from "react";
 import styles from "../routes/Projects.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 function Projects() {
   return (
     <section className={"wrapper"}>
       <div>
         <h2>Projects</h2>
-        <p>“Turning coffee and curiosity into code.”</p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ad
-          molestias ipsum ducimus fugit doloremque repellat architecto
-          laudantium debitis expedita? Praesentium, mollitia sunt reprehenderit
-          officia veritatis repudiandae repellat! Id placeat nobis consectetur
-          natus sint cum repellendus architecto quidem? Quaerat iste sequi
-          voluptas voluptatibus inventore tempore commodi distinctio aspernatur,
-          expedita debitis!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          tempore alias nihil atque veritatis nam animi accusantium commodi
-          harum mollitia placeat ad dolorem voluptatem dolore quae quod
-          doloribus earum nobis fugiat blanditiis, eos enim odio quaerat
-          reiciendis? Nam deserunt dignissimos possimus fugit tenetur sed esse
-          illum, rerum enim temporibus aspernatur, officia quia repellendus ad
-          laboriosam ab similique ut corrupti. Reiciendis cumque, et enim
-          doloribus pariatur voluptatibus mollitia quaerat quod inventore nobis
-          quas libero, eligendi corrupti.
-        </p>
+        <quote>
+          “Turning coffee, curiosity and code into something visually amazing
+          for the web.”
+        </quote>
+        <h3>Today's Specials</h3>
+        <div className={styles["specials-container"]}>
+          <div className={styles["specials-viewport"]}>
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={50}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{
+                delay: 5000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+              }}
+            >
+              <SwiperSlide>
+                <div>Slide 1</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 2</div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+        <div>
+          <h3>All Projects</h3>
+          <ul>
+            <li>pdf conversions</li>
+            <li>Web Based Games</li>
+            <li>Godot Games - dayoffgames.com</li>
+            <li>javascript</li>
+            <li>rest ApI's</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

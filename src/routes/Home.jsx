@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import FeatureCard from "../components/FeatureCard";
+// Assets
 import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
 import flashIt from "../assets/images/screen-shots/flash_it_new.png";
 import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";

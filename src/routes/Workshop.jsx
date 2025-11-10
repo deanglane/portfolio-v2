@@ -1,12 +1,18 @@
 import React from "react";
-import styles from "./Workshop.module.css";
+import { useState } from "react";
+
+import Dropdown from "../components/Dropdown";
 import TestComponent from "../components/TestComponent";
+import styles from "./Workshop.module.css";
+
+// swiper library
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
+// slides object data
 const slides = [
   {
     id: 1,
@@ -26,36 +32,81 @@ const slides = [
 ];
 
 function Workshop() {
+  // logic for open close dropdown
+  const [isOpen, setIsOpen] = useState(false);
+
+  let hoverTimer;
+
+  // hover intent & changing state of isOpen
+  const handleMouseEnter = () => {
+    hoverTimer = setTimeout(() => {
+      setIsOpen(true);
+    }, 300);
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimer);
+    setIsOpen(false);
+  };
+
+  // const toggleDropdown = () => {
+  //   setIsOpen((prev) => !prev);
+  // };
+
   return (
     <>
       <section className={"wrapper"}>
-        <h2>Workshop Area</h2>
-        <p>A page to test adding new content</p>
-        {/* Swiper Slider Testing */}
-        <div className={styles["slides-container"]}>
-          <h3>Slider.js</h3>
-          <div className={styles["slides-viewport"]}>
-            <Swiper
-              modules={[Autoplay, Pagination, EffectFade]}
-              spaceBetween={50}
-              slidesPerView={1}
-              loop={true}
-              effect={"fade"}
-              fadeEffect={{ crossFade: true }}
-              speed={1500}
-              pagination={{ dynamicBullets: false, clickable: true }}
-              autoplay={{
-                delay: 5000,
-                pauseOnMouseEnter: true,
-                disableOnInteraction: false,
-              }}
+        {/* Slides testing */}
+        <div className={styles["slides-div"]}>
+          <h2>Workshop Area</h2>
+          <p>A page to test adding new content</p>
+          {/* Swiper Slider Testing */}
+          <div className={styles["slides-container"]}>
+            <h3>Slider.js</h3>
+            <div className={styles["slides-viewport"]}>
+              <Swiper
+                modules={[Autoplay, Pagination, EffectFade]}
+                spaceBetween={50}
+                slidesPerView={1}
+                loop={true}
+                effect={"fade"}
+                fadeEffect={{ crossFade: true }}
+                speed={1500}
+                pagination={{ dynamicBullets: false, clickable: true }}
+                autoplay={{
+                  delay: 5000,
+                  pauseOnMouseEnter: true,
+                  disableOnInteraction: false,
+                }}
+              >
+                {slides.map((f) => (
+                  <SwiperSlide key={f.id}>
+                    <TestComponent title={f.title} description={f.desc} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+        </div>
+
+        {/* Dropdown mega menu testing */}
+        <div className={styles["megaDD-div"]}>
+          {/* <button onClick={toggleDropdown}>
+            {isOpen ? "Close Menu" : "Open Menu"}
+          </button> */}
+          <div
+            className={styles["nav-hover-area"]}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <h3 className={styles["nav-title"]}>PROJECTS</h3>
+            <div
+              className={`${styles["dropdown-container"]} ${
+                isOpen ? styles["show"] : ""
+              }`}
             >
-              {slides.map((f) => (
-                <SwiperSlide key={f.id}>
-                  <TestComponent title={f.title} description={f.desc} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+              <Dropdown />
+            </div>
           </div>
         </div>
       </section>

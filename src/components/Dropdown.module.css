@@ -1,0 +1,90 @@
+.dropdown {
+  /* Positioning if used under a nav item: */
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  /* Size & layout */
+  width: min(900px, 92vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 */
+  gap: 1rem;
+
+  /* Visuals */
+  background: var(--alternate-section-background, #fff);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  overflow: hidden; /* keeps children inside rounded corners */
+  z-index: 50;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  align-self: start;
+}
+
+.menuItem {
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.menuItem + .menuItem {
+  margin-top: 0.25rem;
+}
+
+.link {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* the active background of the last item selected */
+.active {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.preview {
+  /* Right column box */
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-rows: auto min-content;
+  gap: 0.5rem;
+  align-content: start; /* hug content */
+}
+
+.image {
+  width: 100%;
+  height: clamp(160px, 24vw, 280px);
+  /* height: 100%; */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.caption {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  .dropdown {
+    grid-template-columns: 1fr; /* single column */
+  }
+  .preview {
+    margin-top: 0.75rem;
+  }
+}
