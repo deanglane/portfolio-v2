@@ -17,13 +17,15 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 1rem;
   overflow: hidden; /* keeps children inside rounded corners */
-  z-index: 50;
+  z-index: 10000;
 }
 
 .menu {
   margin: 0;
   padding: 0;
   align-self: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .menuItem {
@@ -67,7 +69,6 @@
 .image {
   width: 100%;
   height: clamp(160px, 24vw, 280px);
-  /* height: 100%; */
   object-fit: cover;
   border-radius: 8px;
   display: block;

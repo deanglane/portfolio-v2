@@ -10,7 +10,6 @@ nav {
 }
 
 nav ul {
-  /* border: 1px solid green; */
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -18,11 +17,23 @@ nav ul {
 }
 
 nav .logo {
-  /* border: 1px solid green; */
   width: 30%;
 }
 
-.title {
-  /* border: 1px solid yellow; */
-  width: 70%;
+/* dropdown mouseEnter/Leave area */
+.nav-link {
+  text-transform: uppercase;
+}
+
+.dropdown-container {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-container.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }

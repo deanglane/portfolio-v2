@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import { useState, React } from "react";
+import { NavLink } from "react-router-dom";
 
 import Dropdown from "../components/Dropdown";
 import TestComponent from "../components/TestComponent";
@@ -99,7 +99,9 @@ function Workshop() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <h3 className={styles["nav-title"]}>PROJECTS</h3>
+            <NavLink className={styles["nav-title"]} to="/projects">
+              projects ▼
+            </NavLink>
             <div
               className={`${styles["dropdown-container"]} ${
                 isOpen ? styles["show"] : ""

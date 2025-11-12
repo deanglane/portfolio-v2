@@ -1,9 +1,24 @@
 import styles from "./Navigation.module.css";
-
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import { useState, useRef } from "react";
 
 function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  let hoverTimer = useRef(null);
+
+  const handleMouseEnter = () => {
+    hoverTimer.current = setTimeout(() => {
+      setIsOpen(true);
+    }, 300);
+  };
+
+  const handleMouseLeave = () => {
+    clearTimeout(hoverTimer.current);
+    setIsOpen(false);
+  };
+
   return (
     <nav className={"wrapper"}>
       <div className={styles.logo}>
@@ -15,9 +30,17 @@ function Navigation() {
             home
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/projects">projects ▼</NavLink>
-          {/* <Dropdown /> */}
+        <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <NavLink className={styles["nav-link"]} to="/projects">
+            projects ▼
+          </NavLink>
+          <div
+            className={`${styles["dropdown-container"]} ${
+              isOpen ? styles["show"] : ""
+            }`}
+          >
+            <Dropdown />
+          </div>
         </li>
         <li>
           <NavLink to="/about">about</NavLink>
