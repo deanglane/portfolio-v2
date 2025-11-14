@@ -1,5 +1,4 @@
 .dropdown {
-  /* Positioning if used under a nav item: */
   position: absolute;
   top: 100%;
   left: 0;
@@ -7,7 +6,7 @@
   /* Size & layout */
   width: min(900px, 92vw);
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 50/50 */
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   /* Visuals */
@@ -16,8 +15,8 @@
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 1rem;
-  overflow: hidden; /* keeps children inside rounded corners */
-  z-index: 10000;
+  overflow: hidden;
+  z-index: 5000000;
 }
 
 .menu {
@@ -30,6 +29,7 @@
 
 .menuItem {
   border-radius: 10px;
+  margin: 0;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 

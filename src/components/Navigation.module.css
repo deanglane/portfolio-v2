@@ -3,13 +3,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px; */
 
   height: 15vh;
   margin: 0 20px 0 20px;
 }
 
-nav ul {
+.main-nav-ul {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -21,7 +21,7 @@ nav .logo {
 }
 
 /* dropdown mouseEnter/Leave area */
-.nav-link {
+.sub-nav-link {
   text-transform: uppercase;
 }
 

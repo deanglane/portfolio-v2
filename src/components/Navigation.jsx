@@ -24,14 +24,14 @@ function Navigation() {
       <div className={styles.logo}>
         <h1>Day Off Dev</h1>
       </div>
-      <ul>
+      <ul className={styles["main-nav-ul"]}>
         <li>
           <NavLink to="/" end>
             home
           </NavLink>
         </li>
         <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <NavLink className={styles["nav-link"]} to="/projects">
+          <NavLink className={styles["sub-nav-link"]} to="/projects">
             projects ▼
           </NavLink>
           <div

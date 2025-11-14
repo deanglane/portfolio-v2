@@ -56,10 +56,10 @@ function Workshop() {
   return (
     <>
       <section className={"wrapper"}>
+        <h2>Workshop Area</h2>
+        <p>A page to test adding new content</p>
         {/* Slides testing */}
         <div className={styles["slides-div"]}>
-          <h2>Workshop Area</h2>
-          <p>A page to test adding new content</p>
           {/* Swiper Slider Testing */}
           <div className={styles["slides-container"]}>
             <h3>Slider.js</h3>
