@@ -33,15 +33,18 @@ const links = [
   },
 ];
 
-function Dropdown() {
+function Dropdown({ isOpen }) {
   const [active, setActive] = useState(0);
 
-  const handleMouseLeave = () => {
+  const handleMouseLeaveAndClick = () => {
     setActive(0);
   };
 
   return (
-    <div className={styles.dropdown} onMouseLeave={handleMouseLeave}>
+    <div
+      className={`${styles.dropdown} ${isOpen ? styles.open : ""}`}
+      onMouseLeave={handleMouseLeaveAndClick}
+    >
       {/* left side */}
       <ul className={styles.menu}>
         {links.map((link, i) => (
@@ -52,7 +55,11 @@ function Dropdown() {
             }`}
             onMouseEnter={() => setActive(i)}
           >
-            <NavLink className={styles.link} to={link.href}>
+            <NavLink
+              onClick={handleMouseLeaveAndClick}
+              className={styles.link}
+              to={link.href}
+            >
               {link.title}
             </NavLink>
           </li>

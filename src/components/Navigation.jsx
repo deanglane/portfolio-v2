@@ -30,16 +30,19 @@ function Navigation() {
             home
           </NavLink>
         </li>
-        <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <NavLink className={styles["sub-nav-link"]} to="/projects">
+        <li className={styles.hasDropdown} onMouseLeave={handleMouseLeave}>
+          <NavLink
+            className={styles["sub-nav-link"]}
+            to="/projects"
+            onMouseEnter={handleMouseEnter}
+            onFocus={handleMouseEnter}
+            onClick={handleMouseLeave}
+          >
             projects ▼
           </NavLink>
-          <div
-            className={`${styles["dropdown-container"]} ${
-              isOpen ? styles["show"] : ""
-            }`}
-          >
-            <Dropdown />
+          {/* className={`${styles["dropdown-container"]} ${isOpen ? styles["show"] : ""}`} */}
+          <div className={styles["dropdown-container"]}>
+            <Dropdown isOpen={isOpen} />
           </div>
         </li>
         <li>
