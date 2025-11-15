@@ -34,8 +34,9 @@ Design a portfolio website that not only features all my projects ranging from f
   - [x] Add better styling, hover over links
   - [x] Make a better logo and add to the abr
   - [x] Make dropdown down component menu with preview info panel grid
-  - [ ] Accessability options and test (fix focus on not deactivating when not focus on)
-  - [ ] make responsive for mobiles with hamburger (cafe themed) clickable menu
+  - [x] Accessability options and test (fix focus on not deactivating when not focus on)
+  - [ ] Style links
+  - [ ] Clean up li hover activation bugs
 - [ ] Project page
   - [ ] Bring all project over in a simple list format (broken or not)
   - [ ] Select a couple of projects to showcase in highlight (Specials) reel
@@ -101,10 +102,12 @@ Design a portfolio website that not only features all my projects ranging from f
 #### Idea's Concepts and fixes (Stretch Goals)
 
 - Make the whole site responsive for mobiles
+  - make responsive for mobiles with hamburger (cafe themed) clickable menu
 - Make sure the entire site is built with accessability in mind
   - Look into implementing React Aria
 - Implement three.js by adding an interactive hero to the main page (cafe themed)
 - Coming Soon section turnupthatbeet.com (My own attempt at a fully functional website)
+- Learn Preloading images and implement across entire site
 
 ---
 

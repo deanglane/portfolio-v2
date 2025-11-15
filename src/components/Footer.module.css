@@ -2,28 +2,7 @@
   background: var(--background-DarkCocoa);
   color: var(--text-CremeBrulee);
   height: 5vh;
-}
-
-.sitemap {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1.5rem;
-}
-
-.contact p {
-  font-size: 0.9rem;
-}
-
-.copyright {
-  text-align: center;
-  padding: 1rem;
-}
-
-.menu li {
-  padding: 0.25rem;
-}
-
-.tagLine p {
-  padding: 0.25rem;
+  justify-content: center;
+  align-items: center;
 }
