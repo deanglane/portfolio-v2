@@ -10,7 +10,7 @@ function Projects() {
     .filter((p) => p.status.toLowerCase() === "active")
     .sort((a, b) => b.date.localeCompare(a.date)); // newest first
   return (
-    <section className={"wrapper"}>
+    <section>
       <div>
         <h2>Projects</h2>
         <quote>
@@ -63,6 +63,25 @@ function Projects() {
                       </small>
                       <h3>{project.desc}</h3>
                       <p>Description of project</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia molestiae expedita veniam sint! Dolorum quibusdam
+                        reprehenderit optio neque quia voluptate cupiditate
+                        velit asperiores, alias unde a, repellendus at vitae
+                        sunt voluptas, necessitatibus fugit impedit iste
+                        consequatur ut quidem rerum soluta! In qui voluptate
+                        quas voluptatem labore, assumenda voluptates. Sapiente
+                        iste quidem cum asperiores doloribus minima, fugiat
+                        commodi consequatur, inventore expedita debitis quisquam
+                        dignissimos. Maxime libero molestiae, veniam dolor hic
+                        accusantium voluptatum vitae corporis totam natus?
+                        Dignissimos aliquam maiores amet pariatur repudiandae
+                        soluta magnam numquam distinctio, repellendus neque
+                        labore impedit et eaque aspernatur. Debitis excepturi et
+                        consequuntur iure amet eaque maiores est quam fugiat
+                        ullam nihil autem adipisci quia nesciunt a, voluptate
+                        reprehenderit sapiente ex alias. Temporibus dolorum.
+                      </p>
                     </div>
                   ) : (
                     <div /> // empty placeholder to keep grid structure
@@ -83,6 +102,25 @@ function Projects() {
                       </small>
                       <h3>{project.desc}</h3>
                       <p>Description of project</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia molestiae expedita veniam sint! Dolorum quibusdam
+                        reprehenderit optio neque quia voluptate cupiditate
+                        velit asperiores, alias unde a, repellendus at vitae
+                        sunt voluptas, necessitatibus fugit impedit iste
+                        consequatur ut quidem rerum soluta! In qui voluptate
+                        quas voluptatem labore, assumenda voluptates. Sapiente
+                        iste quidem cum asperiores doloribus minima, fugiat
+                        commodi consequatur, inventore expedita debitis quisquam
+                        dignissimos. Maxime libero molestiae, veniam dolor hic
+                        accusantium voluptatum vitae corporis totam natus?
+                        Dignissimos aliquam maiores amet pariatur repudiandae
+                        soluta magnam numquam distinctio, repellendus neque
+                        labore impedit et eaque aspernatur. Debitis excepturi et
+                        consequuntur iure amet eaque maiores est quam fugiat
+                        ullam nihil autem adipisci quia nesciunt a, voluptate
+                        reprehenderit sapiente ex alias. Temporibus dolorum.
+                      </p>
                     </div>
                   )}
                 </li>
