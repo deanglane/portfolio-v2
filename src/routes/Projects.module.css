@@ -15,48 +15,104 @@
   padding: 0.5rem;
 }
 
-.grid-container::before {
+/* Outer container */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+/* Continuous vertical line */
+.timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0; /* makes it grow with content */
-  left: 50%; /* center horizontally */
-  width: 2px; /* thickness of the line */
-  background-color: #000; /* color of the line */
-  transform: translateX(-50%); /* perfectly center it */
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #666; /* line color */
+  transform: translateX(-50%);
 }
 
-.grid-container {
-  position: relative; /* needed for absolute positioning */
-  width: 100%;
-  min-height: 100px; /* just for demo */
+/* List layout */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* vertical space between rows */
+}
+
+/* Each row: 3 columns: left | marker | right */
+.item {
+  position: relative; /* dot will position relative to this */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  align-items: start; /* aligns left/right cards at the top */
+  padding-top: 0.1rem; /* tiny buffer to help dot placement */
 }
 
-.grid-leftPanel {
+/* Center narrow column - still needed for layout */
+.markerCell {
+  grid-column: 2;
+  /* no centering needed now */
+}
+
+/* DOT — now absolutely positioned relative to the .item row */
+.dot {
+  position: absolute;
+  top: -6px; /* aligns dot to top of card */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%);
+
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #666;
+  z-index: 5; /* ensures dot is above the line */
+}
+
+/* Your cards (left and right use the same style) */
+.card {
+  border-radius: 18px;
+  border: 2px solid #b44;
+  padding: 1rem 1.5rem;
+  background: #f5f0e5;
+  max-width: 460px;
+}
+
+/* The card for left side */
+.item > .card:first-child {
+  justify-self: end;
   text-align: right;
 }
 
-.grid-rightPanel {
-  /* height: 100%; */
+/* The card on the right side */
+.item > .card:last-child {
+  justify-self: start;
+  text-align: left;
 }
 
-.grid-leftPanel li,
-.grid-rightPanel li {
-  min-height: 100px;
-  outline: 2px dashed gray;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 0.5rem;
-}
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px; /* or display: none; if you want */
+    width: 2px;
+  }
 
-.project-card-left {
-  outline: 1px solid red;
-}
+  .item {
+    grid-template-columns: 24px 1fr; /* line + full-width card */
+  }
 
-.project-card-right {
-  outline: 1px solid green;
+  .markerCell {
+    grid-column: 1;
+  }
+
+  .item > .card:first-child,
+  .item > .card:last-child {
+    grid-column: 2;
+    justify-self: stretch;
+    text-align: left;
+  }
 }

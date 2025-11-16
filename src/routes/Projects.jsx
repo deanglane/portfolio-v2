@@ -6,6 +6,9 @@ import "swiper/css";
 import { projects } from "../utils/projects.js";
 
 function Projects() {
+  const activeSorted = [...projects]
+    .filter((p) => p.status.toLowerCase() === "active")
+    .sort((a, b) => b.date.localeCompare(a.date)); // newest first
   return (
     <section className={"wrapper"}>
       <div>
@@ -42,28 +45,50 @@ function Projects() {
 
       <div>
         <h2>Testing a grid layout</h2>
-        <div className={styles["grid-container"]}>
-          <div className={styles["grid-leftPanel"]}>
-            <ul>
-              {[...projects]
-                .filter((project) => project.status.toLowerCase() === "active")
-                .sort((a, b) => b.date.localeCompare(a.date))
-                .map((project) => (
-                  <li key={`${project.date}-${project.desc}`}>
-                    <div className={styles["project-card-left"]}>
+        <div className={styles.timeline}>
+          <ul className={styles.list}>
+            {activeSorted.map((project, i) => {
+              const isLeft = i % 2 === 0; // even index = left, odd = right
+
+              return (
+                <li
+                  key={`${project.date}-${project.desc}`}
+                  className={styles.item}
+                >
+                  {/* Left side cell */}
+                  {isLeft ? (
+                    <div className={styles.card}>
                       <small>
                         {new Date(project.date).toLocaleDateString()}
                       </small>
                       <h3>{project.desc}</h3>
                       <p>Description of project</p>
                     </div>
-                    <div className={styles["project-card-right"]}>
-                      <p>screenshot</p>
+                  ) : (
+                    <div /> // empty placeholder to keep grid structure
+                  )}
+
+                  {/* Center marker cell (line + dot) */}
+                  <div className={styles.markerCell}>
+                    <span className={styles.dot} />
+                  </div>
+
+                  {/* Right side cell */}
+                  {isLeft ? (
+                    <div /> // empty placeholder
+                  ) : (
+                    <div className={styles.card}>
+                      <small>
+                        {new Date(project.date).toLocaleDateString()}
+                      </small>
+                      <h3>{project.desc}</h3>
+                      <p>Description of project</p>
                     </div>
-                  </li>
-                ))}
-            </ul>
-          </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
           <div className={styles["grid-rightPanel"]}></div>
         </div>
       </div>
