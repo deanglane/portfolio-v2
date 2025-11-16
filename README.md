@@ -71,6 +71,10 @@ Design a portfolio website that not only features all my projects ranging from f
 - [ ] Github clean up for next build update
 - [ ] Look into implementing React Aria
 
+Known Bugs in current version
+
+- [ ] Dropdown hover activates when mouse passes over link but does not hover. Timer activates but does not deactivate onMouseLeave
+
 ---
 
 #### Roadmap 2025 & 2026

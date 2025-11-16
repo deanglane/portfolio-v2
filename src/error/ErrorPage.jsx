@@ -6,8 +6,8 @@ export default function ErrorPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-      <h1 className="text-3xl font-bold text-[#8B5E34]">Uh-oh.</h1>
-      <p className="mt-4">Something went sideways.</p>
+      <h1 className="text-3xl font-bold text-[#8B5E34]">Ah-shit!.</h1>
+      <p className="mt-4">Something went fucking wrong with the code.</p>
       <p className="mt-2 opacity-70">Status: {status}</p>
       <Link
         to="/"

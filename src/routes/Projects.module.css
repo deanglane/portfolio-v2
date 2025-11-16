@@ -15,16 +15,48 @@
   padding: 0.5rem;
 }
 
-.container {
-  position: relative;
-}
-
-.line {
+.grid-container::before {
+  content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #000;
-  transform: translateX(-50%);
+  bottom: 0; /* makes it grow with content */
+  left: 50%; /* center horizontally */
+  width: 2px; /* thickness of the line */
+  background-color: #000; /* color of the line */
+  transform: translateX(-50%); /* perfectly center it */
+}
+
+.grid-container {
+  position: relative; /* needed for absolute positioning */
+  width: 100%;
+  min-height: 100px; /* just for demo */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-leftPanel {
+  text-align: right;
+}
+
+.grid-rightPanel {
+  /* height: 100%; */
+}
+
+.grid-leftPanel li,
+.grid-rightPanel li {
+  min-height: 100px;
+  outline: 2px dashed gray;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.5rem;
+}
+
+.project-card-left {
+  outline: 1px solid red;
+}
+
+.project-card-right {
+  outline: 1px solid green;
 }
