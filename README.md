@@ -38,6 +38,8 @@ Design a portfolio website that not only features all my projects ranging from f
   - [ ] Style links
   - [ ] Clean up li hover activation bugs
 - [ ] Project page
+  - [x] Build a timeline template view for your projects
+  - [ ] make each card a component
   - [ ] Bring all project over in a simple list format (broken or not)
   - [ ] Select a couple of projects to showcase in highlight (Specials) reel
   - [ ] Screenshots and main thumbnail
