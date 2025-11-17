@@ -6,12 +6,16 @@ import "swiper/css";
 import { projects } from "../utils/projects.js";
 
 function Projects() {
+  // Filtering and sorting the original project object array
+  // .filter() is used by passing it a variable "p" with represents the a singular item from the object or array you are filtering. You then should convert it to lowercase just in case the user entered a capital by mistake. Using === you can looking for the exact spelling and type which in this case would be a string matching "active".
+  // .sort() - now you have narrowed the list down you can sort the list by the date value. sort will compare 2 items from your object using (a, b). I am using dates as strings so I need to use localeCompare() method to do the comparisons. Putting b.date before a.date will get me a descending ordered list
   const activeSorted = [...projects]
     .filter((p) => p.status.toLowerCase() === "active")
-    .sort((a, b) => b.date.localeCompare(a.date)); // newest first
+    .sort((a, b) => b.date.localeCompare(a.date));
+
   return (
     <section>
-      <div>
+      <div className="wrapper">
         <h2>Projects</h2>
         <quote>
           “Turning coffee, curiosity and code into something visually amazing
@@ -58,9 +62,6 @@ function Projects() {
                   {/* Left side cell */}
                   {isLeft ? (
                     <div className={styles.card}>
-                      <small>
-                        {new Date(project.date).toLocaleDateString()}
-                      </small>
                       <h3>{project.desc}</h3>
                       <p>Description of project</p>
                       <p>
@@ -84,7 +85,11 @@ function Projects() {
                       </p>
                     </div>
                   ) : (
-                    <div /> // empty placeholder to keep grid structure
+                    <div className={styles["timelineDate-left"]}>
+                      <small>
+                        {new Date(project.date).toLocaleDateString()}
+                      </small>
+                    </div> // empty placeholder to keep grid structure
                   )}
 
                   {/* Center marker cell (line + dot) */}
@@ -94,12 +99,13 @@ function Projects() {
 
                   {/* Right side cell */}
                   {isLeft ? (
-                    <div /> // empty placeholder
-                  ) : (
-                    <div className={styles.card}>
+                    <div>
                       <small>
                         {new Date(project.date).toLocaleDateString()}
                       </small>
+                    </div> // empty placeholder to keep grid structure
+                  ) : (
+                    <div className={styles.card}>
                       <h3>{project.desc}</h3>
                       <p>Description of project</p>
                       <p>
@@ -135,9 +141,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// The projects view will be a linear timeline from most recent to oldest projects with the year and month a created them
-// TODO: 1) Projects title centered on page
-// TODO: 2) tag line centered below title
-// TODO: 3) Make specials gallery width shorter to accommodate a screenshot with short description overlay and link to project below
-// TODO: 4) Style individual project components cards

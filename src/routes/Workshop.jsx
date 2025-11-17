@@ -1,7 +1,7 @@
-import { useState, React } from "react";
+import { React } from "react";
 import { NavLink } from "react-router-dom";
+import { projects } from "../utils/projects.js";
 
-import Dropdown from "../components/Dropdown";
 import TestComponent from "../components/TestComponent";
 import styles from "./Workshop.module.css";
 
@@ -32,35 +32,13 @@ const slides = [
 ];
 
 function Workshop() {
-  // logic for open close dropdown
-  const [isOpen, setIsOpen] = useState(false);
-
-  let hoverTimer;
-
-  // hover intent & changing state of isOpen
-  const handleMouseEnter = () => {
-    hoverTimer = setTimeout(() => {
-      setIsOpen(true);
-    }, 300);
-  };
-
-  const handleMouseLeave = () => {
-    clearTimeout(hoverTimer);
-    setIsOpen(false);
-  };
-
-  // const toggleDropdown = () => {
-  //   setIsOpen((prev) => !prev);
-  // };
-
   return (
     <>
       <section className={"wrapper"}>
         <h2>Workshop Area</h2>
         <p>A page to test adding new content</p>
         {/* Slides testing */}
-        <div className={styles["slides-div"]}>
-          {/* Swiper Slider Testing */}
+        {/* <div className={styles["slides-div"]}>
           <div className={styles["slides-container"]}>
             <h3>Slider.js</h3>
             <div className={styles["slides-viewport"]}>
@@ -87,29 +65,9 @@ function Workshop() {
               </Swiper>
             </div>
           </div>
-        </div>
-
-        {/* Dropdown mega menu testing */}
-        <div className={styles["megaDD-div"]}>
-          {/* <button onClick={toggleDropdown}>
-            {isOpen ? "Close Menu" : "Open Menu"}
-          </button> */}
-          <div
-            className={styles["nav-hover-area"]}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <NavLink className={styles["nav-title"]} to="/projects">
-              projects ▼
-            </NavLink>
-            <div
-              className={`${styles["dropdown-container"]} ${
-                isOpen ? styles["show"] : ""
-              }`}
-            >
-              <Dropdown />
-            </div>
-          </div>
+        </div> */}
+        <div className={styles.box}>
+          <span className={styles.dot} />
         </div>
       </section>
     </>
