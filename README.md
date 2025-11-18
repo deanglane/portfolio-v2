@@ -39,12 +39,12 @@ Design a portfolio website that not only features all my projects ranging from f
   - [ ] Clean up li hover activation bugs
 - [ ] Project page
   - [x] Build a timeline template view for your projects
-  - [ ] make each card a component
-  - [ ] Bring all project over in a simple list format (broken or not)
+  - [x] make each card a component
+  - [ ] Add images like Screenshots and main thumbnail
+  - [ ] Generate a quick summary of each to test layout - detail later
+  - [ ] add buttons for links to github and live preview
+  - [ ] Detailed descriptions of project, solves, challenges and learnings (include tech stack used)
   - [ ] Select a couple of projects to showcase in highlight (Specials) reel
-  - [ ] Screenshots and main thumbnail
-  - [ ] links to github and live preview
-  - [ ] descriptions of project, solves, challenges and learnings (include tech stack used)
 - [ ] About me
   - [ ] A quick summary of who I am and skills
   - [ ] Get some profile pictures of me
@@ -64,6 +64,7 @@ Design a portfolio website that not only features all my projects ranging from f
   - [ ] fix empty space below footer
   - [ ] make front page scrollable
   - [ ] Intro blurp about me and my site
+  - [ ] Use Projects.js to populate the feature card swiper
 - [ ] Tech Stack - Resume (rename)
   - [ ] Resume of work experience and study (tech stack)
 - [ ] Social media links

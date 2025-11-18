@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { projects } from "../utils/projects.js";
+import ProjectCard from "../components/ProjectCard.jsx";
 
 function Projects() {
   // Filtering and sorting the original project object array
@@ -17,10 +18,10 @@ function Projects() {
     <section>
       <div className="wrapper">
         <h2>Projects</h2>
-        <quote>
+        <p>
           “Turning coffee, curiosity and code into something visually amazing
           for the web.”
-        </quote>
+        </p>
         <h3>Today's Specials</h3>
         {/* slider specials gallery */}
         <div className={styles["specials-container"]}>
@@ -48,88 +49,18 @@ function Projects() {
       </div>
 
       <div>
-        <h2>Testing a grid layout</h2>
+        <h2>Project's Timeline</h2>
         <div className={styles.timeline}>
           <ul className={styles.list}>
             {activeSorted.map((project, i) => {
               const isLeft = i % 2 === 0; // even index = left, odd = right
 
               return (
-                <li
+                <ProjectCard
                   key={`${project.date}-${project.desc}`}
-                  className={styles.item}
-                >
-                  {/* Left side cell */}
-                  {isLeft ? (
-                    <div className={styles.card}>
-                      <h3>{project.desc}</h3>
-                      <p>Description of project</p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quia molestiae expedita veniam sint! Dolorum quibusdam
-                        reprehenderit optio neque quia voluptate cupiditate
-                        velit asperiores, alias unde a, repellendus at vitae
-                        sunt voluptas, necessitatibus fugit impedit iste
-                        consequatur ut quidem rerum soluta! In qui voluptate
-                        quas voluptatem labore, assumenda voluptates. Sapiente
-                        iste quidem cum asperiores doloribus minima, fugiat
-                        commodi consequatur, inventore expedita debitis quisquam
-                        dignissimos. Maxime libero molestiae, veniam dolor hic
-                        accusantium voluptatum vitae corporis totam natus?
-                        Dignissimos aliquam maiores amet pariatur repudiandae
-                        soluta magnam numquam distinctio, repellendus neque
-                        labore impedit et eaque aspernatur. Debitis excepturi et
-                        consequuntur iure amet eaque maiores est quam fugiat
-                        ullam nihil autem adipisci quia nesciunt a, voluptate
-                        reprehenderit sapiente ex alias. Temporibus dolorum.
-                      </p>
-                    </div>
-                  ) : (
-                    <div className={styles["timelineDate-left"]}>
-                      <small>
-                        {new Date(project.date).toLocaleDateString()}
-                      </small>
-                    </div> // empty placeholder to keep grid structure
-                  )}
-
-                  {/* Center marker cell (line + dot) */}
-                  <div className={styles.markerCell}>
-                    <span className={styles.dot} />
-                  </div>
-
-                  {/* Right side cell */}
-                  {isLeft ? (
-                    <div>
-                      <small>
-                        {new Date(project.date).toLocaleDateString()}
-                      </small>
-                    </div> // empty placeholder to keep grid structure
-                  ) : (
-                    <div className={styles.card}>
-                      <h3>{project.desc}</h3>
-                      <p>Description of project</p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quia molestiae expedita veniam sint! Dolorum quibusdam
-                        reprehenderit optio neque quia voluptate cupiditate
-                        velit asperiores, alias unde a, repellendus at vitae
-                        sunt voluptas, necessitatibus fugit impedit iste
-                        consequatur ut quidem rerum soluta! In qui voluptate
-                        quas voluptatem labore, assumenda voluptates. Sapiente
-                        iste quidem cum asperiores doloribus minima, fugiat
-                        commodi consequatur, inventore expedita debitis quisquam
-                        dignissimos. Maxime libero molestiae, veniam dolor hic
-                        accusantium voluptatum vitae corporis totam natus?
-                        Dignissimos aliquam maiores amet pariatur repudiandae
-                        soluta magnam numquam distinctio, repellendus neque
-                        labore impedit et eaque aspernatur. Debitis excepturi et
-                        consequuntur iure amet eaque maiores est quam fugiat
-                        ullam nihil autem adipisci quia nesciunt a, voluptate
-                        reprehenderit sapiente ex alias. Temporibus dolorum.
-                      </p>
-                    </div>
-                  )}
-                </li>
+                  isLeft={isLeft}
+                  project={project}
+                />
               );
             })}
           </ul>
