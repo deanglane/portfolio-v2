@@ -28,10 +28,25 @@
   top: 0;
   bottom: 0;
   left: 50%;
+  width: 12px;
+  transform: translateX(-50%);
+
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='200' viewBox='0 0 12 200'><path d='M6 0 C12 25 12 75 6 100 C0 125 0 175 6 200' stroke='%238B5E34' stroke-width='15' fill='none' stroke-linecap='round'/></svg>")
+    repeat-y;
+
+  background-size: 12px 200px;
+}
+
+/* .timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
   width: 4px;
   background: #666;
   transform: translateX(-50%);
-}
+} */
 
 /* List layout */
 .list {
@@ -43,7 +58,7 @@
   gap: 2rem; /* vertical space between rows */
 }
 
-/* Each row: 3 columns: left | marker | right */
+/* (li) Each row: 3 columns: left | marker | right */
 .item {
   position: relative; /* dot will position relative to this */
   display: grid;
@@ -65,12 +80,24 @@
   left: 50%; /* center horizontally */
   transform: translateX(-50%);
 
+  /* leaf example */
+  /* width: 40px; */
+  /* height: 40px; */
+  /* z-index: 5; */
+
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M10 2 C3 7 3 15 10 18 C17 15 17 7 10 2 Z' fill='%23A3B18A'/%3E%3C/svg%3E"); */
+
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  /* transform: rotate(90deg); */
+
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: #fff;
   border: 3px solid #666;
-  z-index: 5; /* ensures dot is above the line */
+  z-index: 5;
 }
 
 /* Your cards (left and right use the same style) */
@@ -80,6 +107,9 @@
   padding: 1rem 1.5rem;
   background: #f5f0e5;
   max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Date stamp on other side of card */

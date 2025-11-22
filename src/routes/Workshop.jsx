@@ -1,6 +1,5 @@
 import { React } from "react";
 import { NavLink } from "react-router-dom";
-import { projects } from "../utils/projects.js";
 
 import TestComponent from "../components/TestComponent";
 import styles from "./Workshop.module.css";

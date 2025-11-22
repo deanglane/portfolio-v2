@@ -48,7 +48,7 @@ section p {
   transform: translateX(-50%);
   z-index: 5;
 }
-
+/* 
 .box::before {
   content: "";
   position: absolute;
@@ -58,4 +58,66 @@ section p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+} */
+
+/* rope */
+/* .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  transform: translateX(-50%);
+  border-radius: 6px;
+
+  background: repeating-linear-gradient(
+    45deg,
+    #8b5e34 0px,
+    #8b5e34 4px,
+    #e6d5c3 4px,
+    #e6d5c3 8px
+  );
+} */
+
+/* more detailed rope */
+/* .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 8px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+
+  background: repeating-linear-gradient(
+      45deg,
+      #8b5e34 0px,
+      #8b5e34 6px,
+      #e6d5c3 6px,
+      #e6d5c3 12px
+    ),
+    linear-gradient(#8b5e34 0%, #8b5e34 100%);
+
+  background-blend-mode: soft-light;
+} */
+
+/* wavy line */
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  transform: translateX(-50%);
+
+  background: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' width='12' height='200' viewBox='0 0 12 200'>\
+      <path d='M6 0 C12 25 12 75 6 100 C0 125 0 175 6 200' stroke=\"%238B5E34\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\
+    </svg>")
+    repeat-y;
+
+  background-size: 12px 200px;
 }

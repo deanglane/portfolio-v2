@@ -40,7 +40,7 @@ Design a portfolio website that not only features all my projects ranging from f
 - [ ] Project page
   - [x] Build a timeline template view for your projects
   - [x] make each card a component
-  - [ ] Add images like Screenshots and main thumbnail
+  - [x] Add images like Screenshots and main thumbnail
   - [ ] Generate a quick summary of each to test layout - detail later
   - [ ] add buttons for links to github and live preview
   - [ ] Detailed descriptions of project, solves, challenges and learnings (include tech stack used)
@@ -82,39 +82,50 @@ Known Bugs in current version
 
 #### Roadmap 2025 & 2026
 
-- v: 2.0.0.0 - Major build - Convert Update. - November '25
+- v:2.0.0.0 - Major build - Convert Update. - November '25
 - v:2.0.1.0 - Revision build - Projects Page Update (Better projects display)- December '25
-  1. Add All missing projects (only working code)
-  2. Updated screenshots for projects
-  3. When selected a modal pops up giving more details on the project with links to preview live or view code on github
 - v:2.0.2.0 - Revision build - Game page Update - January '25
-  1. Fix Game description page
-     - Theme for site
-     - include a back button
-  2. Add missing games
-  3. Come up with a better theme
-  4. Future state - separate game studio page dayoffgames.com
-- v:2.0.3.0 - Better Graphics update February '26.  
-  Creating better images for each page including:
-  1. Better screenshots/gallery of projects
-  2. glyths for pages
-  3. profile image
-  4. logo redesign
+- v:2.0.3.0 - Better Graphics update February '26.
 - v:2.1.0.0 - Minor build - Password Section - March '26
-  1. Add Auth area to the site
 - v:2.2.0.0 - Navigation Bar Update - April '26
-  1. Navigation bar needs polishing and cleaning up
-  2. Does the nav bar need to be sticky?
 
-#### Idea's Concepts and fixes (Stretch Goals)
+#### Idea's Concepts and fixes for future updates (Stretch Goals)
 
-- Make the whole site responsive for mobiles
-  - make responsive for mobiles with hamburger (cafe themed) clickable menu
-- Make sure the entire site is built with accessability in mind
-  - Look into implementing React Aria
-- Implement three.js by adding an interactive hero to the main page (cafe themed)
-- Coming Soon section turnupthatbeet.com (My own attempt at a fully functional website)
-- Learn Preloading images and implement across entire site
+- MAINTENANCE - Make the whole site responsive for mobiles
+- MAINTENANCE - make responsive for mobiles with hamburger (cafe themed) clickable menu
+- MAINTENANCE - Make sure the entire site is built with accessability in mind
+- MAINTENANCE - Look into implementing React Aria
+- HOMEPAGE - Implement three.js by adding an interactive hero to the main page (cafe themed)
+- NEW PROJECT - Coming Soon section turnupthatbeet.com (My own attempt at a fully functional website)
+- MAINTENANCE - Learn Preloading images and implement across entire site
+- MAINTENANCE - card style gallery component that can be loaded to any page yet uses a specific object array for its content based on the page the component has been applied to.
+- HOME PAGE - Spotify playlist incorporate
+- HOME PAGE - Instagram reel of completed projects and behind the scenes
+- PROJECTS - Add All missing projects (only working code)
+- PROJECTS - Updated screenshots for projects
+- PROJECTS - When selected a modal pops up giving more details on the project with links to preview live or view code on github
+- PROJECTS - Project icons for visual representation of projects
+- PROJECTS - replace the timeline dot with the title of the project on its own card
+- GAMES - Fix Game description page
+- GAMES - Theme for site
+- GAMES - Future state - separate game studio page dayoffgames.com
+- GAMES - include a back button to dayoffdev on new site
+- GAMES - Add missing games
+- MAINTENANCE - Creating better images for each page
+- MAINTENANCE - Better screenshots/gallery of projects
+- MAINTENANCE - glyths for pages
+- MAINTENANCE - profile image
+- MAINTENANCE - logo redesign
+- MAINTENANCE - Add Auth area to the site
+- MAINTENANCE - Navigation bar needs polishing and cleaning up
+- MAINTENANCE - Does the nav bar need to be sticky?
+- MAINTENANCE - New theme for site
+- MAINTENANCE - New colour palette for site
+- MAINTENANCE - form section to submit a bug or suggest a new feature - firebase linkup / bug icon
+- MAINTENANCE - Fix dropdown hover glitch
+- GAME - Animated gifs of actual game play on a loop
+- MAINTENANCE/PROJECTS - Menu system for selecting project genres for the timeline eg frontEnd, games etc
+- MAINTENANCE - a way to track if the link to preview projects as been clicked - firebase
 
 ---
 
@@ -149,3 +160,5 @@ The application exhibits **mobile responsiveness** and incorporates **accessibil
   "swiper": "^12.0.2"
 }
 ```
+
+ctrl + shift + v = markup preview

@@ -43,7 +43,7 @@
 }
 
 .card_background {
-  background-color: #ffffff;
+  background-color: var(--craft-mat-green);
   border-radius: 1rem;
   width: 100%;
   min-height: clamp(260px, 45vh, 520px); /* New height set */

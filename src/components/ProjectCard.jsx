@@ -2,20 +2,45 @@ import React from "react";
 import styles from "../routes/Projects.module.css";
 
 function ProjectCard({ isLeft, project }) {
+  const hasFeatures = project.features && project.features.length > 0;
+  const hasTechStack = project.techStack && project.techStack.length > 0;
+  const projectCell = (
+    <div className={`${styles["timelineDate-left"]} ${styles.card}`}>
+      <small>{new Date(project.date).toLocaleDateString()}</small>
+      <h3>Project Features:</h3>
+      {hasFeatures && (
+        <ul>
+          {project.features.map((feature) => (
+            <li key={feature}>{feature}</li>
+          ))}
+        </ul>
+      )}
+      {hasTechStack && (
+        <ul>
+          {project.techStack.map((stack) => (
+            <li key={stack}>{stack}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+
+  const supportCell = (
+    <div className={styles.card}>
+      <h2>{project.title}</h2>
+      <p>{project.tag}</p>
+      <h3>Developer Summary:</h3>
+      <p>{project.desc}</p>
+      <div>
+        <img src={project.image} alt="yep I'll do this one day" />
+      </div>
+    </div>
+  );
+
   return (
     <li className={styles.item}>
       {/* Left side cell */}
-      {isLeft ? (
-        <div className={styles.card}>
-          <h3>{project.title}</h3>
-          <p>Description of project</p>
-          <p>{project.desc}</p>
-        </div>
-      ) : (
-        <div className={styles["timelineDate-left"]}>
-          <small>{new Date(project.date).toLocaleDateString()}</small>
-        </div> // empty placeholder to keep grid structure
-      )}
+      {isLeft ? supportCell : projectCell}
 
       {/* Center marker cell (line + dot) */}
       <div className={styles.markerCell}>
@@ -23,17 +48,7 @@ function ProjectCard({ isLeft, project }) {
       </div>
 
       {/* Right side cell */}
-      {isLeft ? (
-        <div>
-          <small>{new Date(project.date).toLocaleDateString()}</small>
-        </div> // empty placeholder to keep grid structure
-      ) : (
-        <div className={styles.card}>
-          <h3>{project.title}</h3>
-          <p>Description of project</p>
-          <p>{project.desc}</p>
-        </div>
-      )}
+      {isLeft ? projectCell : supportCell}
     </li>
   );
 }
