@@ -15,6 +15,7 @@ function ProjectCard({ isLeft, project }) {
           ))}
         </ul>
       )}
+      <h3>Tech Stacks:</h3>
       {hasTechStack && (
         <ul>
           {project.techStack.map((stack) => (

@@ -1,8 +1,8 @@
 .hero {
   height: 100%;
-  display: flex;
-  gap: 1rem; /* optional spacing */
-  align-items: stretch;
+  /* display: flex; */
+  /* gap: 1rem; */
+  /* align-items: stretch; */
 }
 
 .intro {
@@ -43,24 +43,27 @@
 }
 
 .card_background {
-  background-color: var(--craft-mat-green);
-  border-radius: 1rem;
+  background-image: url(../assets/images/woodgrain-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  min-height: clamp(260px, 45vh, 520px); /* New height set */
+  /* height: 800px; */
+  /* min-height: clamp(260px, 45vh, 520px); */
   display: flex;
   flex-direction: column;
-  -webkit-box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.52);
-  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.5);
   padding: 1.2rem;
 }
 
 .card_foreground {
-  background-color: var(--alternate-section-background);
-  border-radius: 1rem;
-  margin: 0;
-  min-width: 0;
-  display: flex;
-  flex: 1 1 0;
+  /* background-color: var(--alternate-section-background); */
+  background-image: url(../assets/images/craft-mat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin: 0; */
+  /* min-width: 0; */
+  /* display: flex; */
+  /* flex: 1 1 0; */
 }
 
 /* Scope Swiper classes through :global because you're in CSS Modules */

@@ -6,7 +6,7 @@ function Footer() {
     <footer className={`${styles.footer}`}>
       <div>
         brewed in Toronto — © {new Date().getFullYear()} Dean the Day Off Dev -
-        v:0.1.1.1
+        v:2.1.3.0
       </div>
     </footer>
   );

@@ -47,7 +47,7 @@ const features = [
 function Home() {
   return (
     <>
-      <main className={"wrapper"}>
+      <main>
         {/* hero image */}
         <section className={styles.hero}>
           <div className={styles.intro}>
