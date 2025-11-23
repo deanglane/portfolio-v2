@@ -3,7 +3,7 @@ import stellar from "../assets/images/screen-shots/stellar-harvest-thumbnail.png
 import barOne from "../assets/images/screen-shots/bar_one_new.png";
 import battleRockets from "../assets/images/screen-shots/battle_rockets_new.png";
 import horoscope from "../assets/images/screen-shots/daily_horoscope_app.png";
-import flastIt from "../assets/images/screen-shots/flash_it_new.png";
+import flashIt from "../assets/images/screen-shots/flash_it_new.png";
 import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
 import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
 import portfolio from "../assets/images/screen-shots/portfolio_2.0.png";
@@ -79,7 +79,17 @@ export const projects = [
       "Custom Art & Asset Management - All sprites designed and animated using Aseprite. Asset pipeline for loading ship, meteorites, and effects",
       "Performance Optimization - Cleanup of off-screen or collected meteorites to reduce memory usage",
     ],
-    techStack: [],
+    techStack: [
+      "Godot Engine (GDScript) — core engine used for all gameplay logic",
+      "GDScript — scripting language used for physics, collisions, input, and game loop",
+      "Aseprite — custom pixel-art assets (ship, meteorites, effects)",
+      "Spritesheets & Frame Animation — for meteorite movement and impact visuals",
+      "Git & GitHub — version control and project tracking",
+      "Godot Script Editor — development environment",
+      "HTML5 — structure and elements",
+      "CSS3 — styling and responsive layout",
+      "JavaScript (ES6+) — functionality and app logic",
+    ],
     gitHub: "",
     status: "active",
     highlight: false,
@@ -137,15 +147,45 @@ export const projects = [
   {
     date: "2023-06-01",
     title: "Flash it!",
-    desc: "",
-    features: [],
-    techStack: [],
+    desc: `Flash It is a web-based study tool that allows users to create, store, and review their own flashcard decks. This was the first app I built fully from concept to completion, using the skills I developed throughout my boot camp. The project is built with React, JavaScript, and Firebase, and intentionally avoids any external libraries to practice building functionality from scratch.
+
+    A core goal of the project was implementing user authentication through Firebase so each user could create a unique account and store their personal flashcards securely. Building a responsive navigation system that adapts to the user’s authentication state was one of the early challenges—especially ensuring the UI updates immediately when a user logs in or out. This process taught me a lot about React hooks (such as useEffect, useState, and navigation-related hooks) and how to use conditional rendering and ternary expressions effectively.
+    
+    This project pushed me to think more deeply about how different components, data flows, and app features interact with each other. I plan to revisit Flash It in the future and expand it with a stronger UX flow, improved authentication handling, card previews and editing tools, and potentially rich text formatting for more expressive flashcards.`,
+    features: [
+      "Create, edit, and review personalized flashcards",
+      "User authentication with Firebase Auth",
+      "Unique user accounts with secure storage",
+      "Flashcards stored and retrieved from Firebase Firestore",
+      "Navigation updates dynamically based on authentication state",
+      "Conditional rendering using React hooks and ternary expressions",
+      "Deck creation system for organizing study topics",
+      "Responsive layout for multiple device sizes",
+      "Form handling for flashcard creation input",
+      "Flashcard review mode with card flipping interaction",
+      "State management using useState and useEffect",
+      "Clean component-based React architecture",
+      "No external libraries used for UI or functionality",
+      "Error handling for login, logout, and card submission",
+      "Future-ready structure for adding card previews or editing tools",
+    ],
+    techStack: [
+      "React (JavaScript) — primary framework",
+      "HTML5 — structure and elements",
+      "CSS3 — styling and responsive layout",
+      "JavaScript (ES6+) — functionality and app logic",
+      "Firebase Authentication — user login & account creation",
+      "Firebase Firestore — database for storing user flashcards",
+      "Git & GitHub — version control and collaboration",
+      "VS Code — development environment",
+      "Browser DevTools — debugging and testing",
+    ],
     url: "",
     gitHub: "",
     status: "active",
     highlight: true,
     featureReel: false,
-    image: flastIt,
+    image: flashIt,
   },
   {
     date: "2023-04-25",

@@ -7,7 +7,7 @@ function ProjectCard({ isLeft, project }) {
   const projectCell = (
     <div className={`${styles["timelineDate-left"]} ${styles.card}`}>
       <small>{new Date(project.date).toLocaleDateString()}</small>
-      <h3>Project Features:</h3>
+      <h3>Features:</h3>
       {hasFeatures && (
         <ul>
           {project.features.map((feature) => (
@@ -15,6 +15,7 @@ function ProjectCard({ isLeft, project }) {
           ))}
         </ul>
       )}
+      <h3>Tech Stack:</h3>
       {hasTechStack && (
         <ul>
           {project.techStack.map((stack) => (
