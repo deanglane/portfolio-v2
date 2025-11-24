@@ -190,9 +190,37 @@ export const projects = [
   {
     date: "2023-04-25",
     title: "Pokedex",
-    desc: "",
-    features: [],
-    techStack: [],
+    desc: `The Pokémon Pokédex is a web app inspired by the original 1990 DMG Game Boy design. It recreates the hardware aesthetic entirely with CSS and allows users to browse Pokémon, view their stats, and explore evolution chains—just like a functional in-game Pokédex.
+
+    The project is built with JavaScript and powered by the PokéAPI REST API, a free and structured Pokémon data service. Using simple REST endpoints, each Pokémon can be fetched by ID or name, returning consistent JSON data including names, sprites, stats, height, weight, and types. Because the API follows REST principles, responses are predictable, lightweight, and fast—making data handling straightforward.
+    
+    To recreate the Game Boy itself, I used SASS, a CSS preprocessor that allowed me to take advantage of variables, nesting, and reusable mixins. This made the complex “CSS art” process far more manageable and helped me produce a clean, maintainable styling structure.
+    
+    This project strengthened my understanding of API architecture, dynamic rendering, and data fetching patterns. It also pushed me creatively—forcing me to stretch CSS in unusual ways to bring a physical retro device to life on the web. It definitely won’t be my last experiment with CSS art.`,
+    features: [
+      "Browse all Pokémon using the PokéAPI REST API",
+      "Fetch Pokémon data by name or ID",
+      "Display evolution chains for each Pokémon",
+      "Show stats, height, weight, and type information",
+      "Dynamic rendering based on API responses",
+      "Custom Game Boy UI recreated with pure CSS",
+      "SASS styling with variables, mixins, and nesting",
+      "Responsive layout structured around a retro console design",
+      "Error handling for invalid Pokémon searches",
+      "Sprite loading with fallback states",
+      "Smooth UI interactions mimicking classic Game Boy controls",
+      "Clean JavaScript architecture for API calls and state updates",
+    ],
+    techStack: [
+      "JavaScript (ES6+) — main logic and API handling",
+      "HTML5 — structure and layout",
+      "SASS / SCSS — advanced styling and CSS art",
+      "CSS3 — UI design, Game Boy styling, animations",
+      "PokéAPI (REST API)",
+      "Git & GitHub — version control",
+      "VS Code — primary development environment",
+      "Browser DevTools — debugging CSS and API requests",
+    ],
     url: "",
     gitHub: "",
     status: "active",
@@ -203,9 +231,38 @@ export const projects = [
   {
     date: "2023-04-13",
     title: "Daily Horoscope",
-    desc: "",
-    features: [],
-    techStack: [],
+    desc: `This interactive web app lets users discover their zodiac sign and view personalized horoscope readings for yesterday, today, and tomorrow. Users can either select their birthday through a guided modal or simply click on a zodiac symbol from the main screen. Once a date is chosen, the app automatically determines the correct star sign by comparing the user's birth date with a predefined zodiac date range. It then fetches detailed horoscope data—including mood, compatibility, lucky number, and daily description—from an external horoscope API.
+
+    The interface is designed with smooth transitions, responsive layouts, and dynamic UI states. Hover effects reveal extra zodiac information on larger screens, while smaller screens adjust to show all content fully expanded. Users can toggle between the three daily horoscope panels or navigate back to the zodiac selection view using animated controls. Overall, the app blends clean logic, intuitive interactions, and API-driven content to create a polished, engaging horoscope experience.
+    
+    Unfortunately soon after launch the API went down and was no long available. I felt this app had a lot of cool features beyond the API call and was still worth showcasing here in my portfolio.`,
+    features: [
+      "Determine zodiac sign based on user-selected birth date",
+      "Select birth date using a guided modal interface",
+      "Allow direct zodiac symbol selection from main screen",
+      "Fetch horoscope data for yesterday, today, and tomorrow",
+      "Display mood, compatibility, lucky number, and detailed descriptions",
+      "Responsive layout optimized for desktop and mobile",
+      "Hover effects that reveal additional zodiac details on larger screens",
+      "Smooth UI transitions when switching between views",
+      "Daily horoscope panel toggling",
+      "Animated back-navigation to zodiac selection",
+      "Dynamically rendered zodiac components based on selected sign",
+      "Date-range matching logic to assign correct zodiac sign",
+      "Error handling for invalid or missing API data",
+      "API-driven content loaded through clean fetch requests",
+      "Polished and intuitive user flow for horoscope browsing",
+    ],
+    techStack: [
+      "JavaScript (ES6+) — application logic and API communication",
+      "HTML5 — structural layout",
+      "CSS3 — animations, transitions, and responsive design",
+      "SASS / SCSS — if you used nested styling or variables",
+      "External Horoscope API",
+      "Git & GitHub — version control",
+      "VS Code — development environment",
+      "Browser DevTools — debugging, layout inspection, API testing",
+    ],
     url: "",
     gitHub: "",
     status: "active",
@@ -216,9 +273,38 @@ export const projects = [
   {
     date: "2023-02-01",
     title: "Bar one",
-    desc: "",
-    features: [],
-    techStack: [],
+    desc: `Bar One started as a PDF-to-website conversion project that pushed my early front-end skills in both layout and interaction design. I rebuilt a multi-page bar and restaurant site from a static mockup using semantic HTML and custom CSS, focusing on responsive structure, accessible navigation, and a visually cohesive brand experience.
+
+    Once the layout was in place, I used it as a playground to experiment with my first “from-scratch” JavaScript features. On the menu page, I built an interactive ordering flow where users can click any menu item to open a modal, preview the selection, and add it to a cart-style order panel. Each order is stored in arrays, allowing items to be added, removed, and recalculated in real time—including subtotal, tax, and total.
+    
+    This project taught me how to wire up DOM events, work with arrays and reduce() for totals, manipulate the DOM to render dynamic content, and debug using the browser console. Bar One was one of the first times I designed my own JavaScript flows rather than following a tutorial, and it became a key milestone in understanding how state and UI work together`,
+    features: [
+      "Multi-page bar and restaurant website built from a PDF mockup",
+      "Responsive layout with semantic HTML structure",
+      "Mobile-first navigation with a checkbox-driven slide-out menu",
+      "Desktop navigation with centered brand logo and page links",
+      "Accessible skip link to jump directly to main content",
+      "Menu page with interactive item selection",
+      "Click any menu item to open a preview modal with image, description, and price",
+      "Add selected meals to an order panel using JavaScript and DOM manipulation",
+      "Cart-style order sidebar with live subtotal, tax, and total calculations",
+      "Ability to remove individual items from the order using a custom trash button",
+      "Cancel button to clear all items and reset totals",
+      "Order data stored in arrays, using mapping and reducing to recalculate costs",
+      "Use of HTML <dialog> elements for modals and overlays",
+      "Custom CSS styling for sections like events, blog, gallery, and hero header",
+      "Basic accessibility considerations, including aria-labels and keyboard-focusable elements",
+    ],
+    techStack: [
+      "JavaScript (ES6) – interactive menu ordering, DOM manipulation, event handling",
+      "HTML5 – semantic structure for multi-page layout (home, menu, blog, contact)",
+      "CSS3 – custom styling, responsive layout, navigation, and grid-like sections",
+      "SASS / SCSS — if you used nested styling or variables",
+      "Font Awesome – iconography for menu toggles and close buttons",
+      "VS Code – development environment",
+      "Git & GitHub – version control (if you used it for this project)",
+      "Browser DevTools – debugging JavaScript, DOM structure, and layout issues",
+    ],
     url: "",
     gitHub: "",
     status: "active",
