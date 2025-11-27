@@ -8,6 +8,7 @@ import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
 import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
 import portfolio from "../assets/images/screen-shots/portfolio_2.0.png";
 import tappyPlane from "../assets/images/screen-shots/tappy_plane.png";
+import stopwatch from "../assets/images/screen-shots/stopwatch.png";
 
 export const projects = [
   {
@@ -20,8 +21,8 @@ export const projects = [
     Think of it as a living creative playground — a place where I can show what I’ve built, what I’m learning, and everything I love making.`,
     features: [],
     techStack: [],
-    url: "",
-    gitHub: "",
+    url: "https://dayoffdev.com",
+    gitHub: "https://github.com/deanglane/portfolio-v2",
     status: "Coming Soon",
     highlight: true,
     featureReel: false,
@@ -67,7 +68,6 @@ export const projects = [
     One of my goals was to modernize the traditional Pong interaction. Instead of simply bouncing the ball back, I experimented with a mechanic where the meteorite is “absorbed” into the ship on contact, triggering scoring events and visual feedback. Through this project I learned core game-development concepts such as basic physics (gravity and velocity), score handling, collision detection, and random object generation. I also designed all the sprite assets myself using Aseprite, which gave me a deeper appreciation for pixel-art workflows.
     
     Stellar Harvest was a huge milestone for me as a developer. It was the first time I combined gameplay design, coding logic, and visual art into a single project. I plan to revisit it in the future and expand the mechanics with the new skills I’ve gained in game development.`,
-    url: "",
     features: [
       "Physics System - Basic gravity and velocity handling for meteorite movement and Adjustable speed curves for increasing difficulty",
       "Player Controls - Keyboard arrow key input for precise ship movement with Smooth horizontal acceleration and deceleration",
@@ -90,7 +90,8 @@ export const projects = [
       "CSS3 — styling and responsive layout",
       "JavaScript (ES6+) — functionality and app logic",
     ],
-    gitHub: "",
+    url: "https://deanlane.ca/pages/stellar-harvest-web/stellar-harvest.html",
+    gitHub: "https://github.com/deanglane/stellar-harvest",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -137,8 +138,10 @@ export const projects = [
       "Browser DevTools — debugging, layout inspection, performance checks",
       "Netlify - for deployment",
     ],
-    url: "",
-    gitHub: "",
+    url: "https://battlerockets-game.netlify.app/",
+    gitHub:
+      "https://github.com/Juno-Group3-project4/group3-project4-battle-rockets",
+    github2: "https://github.com/deanglane/Battle-Rockets-Game.git",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -180,8 +183,8 @@ export const projects = [
       "VS Code — development environment",
       "Browser DevTools — debugging and testing",
     ],
-    url: "",
-    gitHub: "",
+    url: "https://flash-it-app.netlify.app/",
+    gitHub: "https://github.com/deanglane/dean-lane-flash-it-app",
     status: "active",
     highlight: true,
     featureReel: false,
@@ -221,8 +224,8 @@ export const projects = [
       "VS Code — primary development environment",
       "Browser DevTools — debugging CSS and API requests",
     ],
-    url: "",
-    gitHub: "",
+    url: "https://dean-lane-pokemon-app.netlify.app/",
+    gitHub: "https://github.com/deanglane/pokemon-pokedex-app",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -263,8 +266,8 @@ export const projects = [
       "VS Code — development environment",
       "Browser DevTools — debugging, layout inspection, API testing",
     ],
-    url: "",
-    gitHub: "",
+    url: "https://deanlane-dailyhoroscopeapp.netlify.app/",
+    gitHub: "https://github.com/JC47-P2-Sabrina-Dean/horoscope-app",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -305,8 +308,8 @@ export const projects = [
       "Git & GitHub – version control (if you used it for this project)",
       "Browser DevTools – debugging JavaScript, DOM structure, and layout issues",
     ],
-    url: "",
-    gitHub: "",
+    url: "https://deanlane-proj01-bar-one.netlify.app/",
+    gitHub: "https://github.com/deanglane/bar-one",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -315,14 +318,74 @@ export const projects = [
   {
     date: "2022-12-01",
     title: "Hangry Tummy",
-    desc: "",
-    features: [],
-    techStack: [],
-    url: "",
-    gitHub: "",
+    desc: `Hangry Tummy is a PDF-to-website conversion project based on a single-page restaurant landing design and an accompanying style guide that specified typography, colours, spacing, and overall visual theme. My goal was to recreate the layout in code as closely as possible while making it responsive and accessible.
+
+    This was one of my earliest attempts at building a full web page from scratch, focusing on flexbox-based layout, responsive behaviour, and mobile navigation patterns. I implemented a flexible section structure, image handling that adapts across screen sizes, and a mobile menu to accommodate smaller viewports.
+    
+    Beyond just matching the design, this project taught me how to think more like a front-end developer: balancing visual fidelity with clean HTML structure, using flexbox for layout instead of absolute positioning, and keeping accessibility and client-style constraints in mind—all under a tight deadline.`,
+    features: [
+      "Pixel-inspired conversion from PDF mockup and style guide",
+      "Responsive single-page restaurant landing layout",
+      "Flexbox-based section layout for content and imagery",
+      "Mobile-first design with responsive breakpoints",
+      "Responsive navigation with a mobile-friendly menu",
+      "Consistent use of typography and colours from the style guide",
+      "Optimized image sizing and cropping for different viewports",
+      "Semantic HTML structure for better accessibility",
+      "Tight-deadline build simulating real client constraints",
+    ],
+    techStack: [
+      "HTML5 - for semantic structure",
+      "CSS3 - for styling and layout",
+      "Google Fonts - for typography defined in the style guide",
+      "VS Code – development environment",
+      "Git & GitHub – version control (if you used it for this project)",
+      "Browser DevTools – debugging JavaScript, DOM structure, and layout issues",
+    ],
+    url: "https://deanlane-assign01-hungry-tummy.netlify.app/",
+    gitHub: "https://github.com/deanglane/dean-lane-hangry-tummy",
     status: "active",
     highlight: false,
     featureReel: false,
     image: hangryTummy,
+  },
+  {
+    date: "2024-10-12",
+    title: "Stopwatch",
+    desc: `The Shopify Stopwatch Challenge was a technical assessment designed to evaluate my ability to work with React, TypeScript, and testing libraries under real development conditions. The assignment required me to build a fully functional stopwatch application from a provided project scaffold, following strict version control workflows and professional code quality standards.
+
+    The stopwatch supports starting, stopping, resetting, and recording lap times — all managed through typed React state and modular components. I built the core logic inside reusable components, wrote TypeScript interfaces for props and state, and implemented unit tests to verify functionality such as timing accuracy, lap behavior, and UI state changes.
+    
+    This was my first time building a feature using TypeScript and applying React Testing Library to write meaningful unit tests. It pushed me to think more deeply about typing, component boundaries, immutability, and test-driven development. It also simulated a real developer workflow: working in a forked repo, building on a feature branch, committing regularly, and submitting a clean pull request for review.
+    
+    The challenge strengthened my confidence in React’s architecture, formal development processes, and writing maintainable, production-quality code.`,
+    features: [
+      "Start and stop stopwatch functionality using typed React state",
+      "Reset button that clears time back to zero",
+      "Lap recording with a dynamic list of stored timestamps",
+      "Modular component structure (App, Stopwatch, StopwatchButton)",
+      "TypeScript interfaces for props and component state",
+      "Accurate millisecond-based time tracking logic",
+      "Unit tests verifying start, stop, reset, and lap behavior",
+      "Test-driven approach for validating UI and state updates",
+      "Clean code organization and adherence to React best practices",
+      "Git workflow using branches, commits, and pull requests",
+    ],
+    techStack: [
+      "React (TypeScript) for component-based UI",
+      "TypeScript for strong typing, interfaces, and safer code",
+      "React Testing Library for unit and interaction tests",
+      "Jest as the test runner",
+      "CSS for styling stopwatch and UI states",
+      "Git & GitHub for version control, branching, and pull requests",
+      "VS Code and React DevTools for development and debugging",
+      "Node & npm for dependency management and local environment",
+    ],
+    url: "",
+    gitHub: "https://github.com/deanglane/stopwatch/tree/development",
+    status: "active",
+    highlight: false,
+    featureReel: false,
+    image: stopwatch,
   },
 ];
