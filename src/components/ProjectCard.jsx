@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../routes/Projects.module.css";
+import styles from "./ProjectCard.module.css";
 
 function ProjectCard({ isLeft, project }) {
   const hasFeatures = project.features && project.features.length > 0;
   const hasTechStack = project.techStack && project.techStack.length > 0;
+
   const projectCell = (
     <div className={`${styles["timelineDate-left"]} ${styles.card}`}>
       <small>{new Date(project.date).toLocaleDateString()}</small>
@@ -23,6 +24,14 @@ function ProjectCard({ isLeft, project }) {
           ))}
         </ul>
       )}
+      <div className={styles.buttonContainer}>
+        <a className={"button"} href={project.url}>
+          Live Preview
+        </a>
+        <a className={"button"} href={project.gitHub}>
+          Github Code
+        </a>
+      </div>
     </div>
   );
 

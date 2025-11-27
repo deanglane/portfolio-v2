@@ -1,0 +1,99 @@
+/* List layout */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* vertical space between rows */
+}
+
+/* (li) Each row: 3 columns: left | marker | right */
+.item {
+  position: relative; /* dot will position relative to this */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  align-items: start; /* aligns left/right cards at the top */
+  padding-top: 0.1rem; /* tiny buffer to help dot placement */
+}
+
+/* Center narrow column - still needed for layout */
+.markerCell {
+  grid-column: 2;
+  /* no centering needed now */
+}
+
+/* DOT — now absolutely positioned relative to the .item row */
+.dot {
+  position: absolute;
+  top: -6px; /* aligns dot to top of card */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%);
+
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #666;
+  z-index: 5;
+}
+
+/* Your cards (left and right use the same style) */
+.card {
+  border-radius: 18px;
+  border: 2px solid #000000;
+  padding: 1rem 1.5rem;
+  background: #f5f0e5;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Date stamp on other side of card */
+.timelineDate-left {
+  text-align: right;
+}
+
+/* The card for left side */
+.item > .card:first-child {
+  justify-self: end;
+  text-align: right;
+}
+
+/* The card on the right side */
+.item > .card:last-child {
+  justify-self: start;
+  text-align: left;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .timeline::before {
+    /* or display: none; if you want */
+    left: 12px;
+    width: 2px;
+  }
+
+  .item {
+    grid-template-columns: 24px 1fr; /* line + full-width card */
+  }
+
+  .markerCell {
+    grid-column: 1;
+  }
+
+  .item > .card:first-child,
+  .item > .card:last-child {
+    grid-column: 2;
+    justify-self: stretch;
+    text-align: left;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}

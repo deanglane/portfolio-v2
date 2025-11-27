@@ -350,7 +350,7 @@ export const projects = [
     image: hangryTummy,
   },
   {
-    date: "2024-10-12",
+    date: "2024-08-12",
     title: "Stopwatch",
     desc: `The Shopify Stopwatch Challenge was a technical assessment designed to evaluate my ability to work with React, TypeScript, and testing libraries under real development conditions. The assignment required me to build a fully functional stopwatch application from a provided project scaffold, following strict version control workflows and professional code quality standards.
 
