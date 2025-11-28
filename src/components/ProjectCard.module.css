@@ -67,6 +67,15 @@
   list-style: circle;
 }
 
+.card h3,
+.card h2 {
+  text-align: center;
+}
+
+.cardFeatureLeft {
+  text-align: left;
+}
+
 /* The card for left side */
 .item > .card:first-child {
   justify-self: end;

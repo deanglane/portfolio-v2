@@ -15,22 +15,35 @@ function ProjectCard({ isLeft, project }) {
   // project cell for features and Tech stack
   const projectCell = (
     <div className={styles.card}>
-      <h3>Features:</h3>
+      <h3>Features</h3>
       {hasFeatures && (
-        <ul>
+        <ul className={!isLeft ? styles.cardFeatureLeft : undefined}>
           {project.features.map((feature) => (
             <li key={feature}>{feature}</li>
           ))}
         </ul>
       )}
-      <h3>Tech Stack:</h3>
+      <h3>Tech Stack</h3>
       {hasTechStack && (
-        <ul>
+        <ul className={!isLeft ? styles.cardFeatureLeft : undefined}>
           {project.techStack.map((stack) => (
             <li key={stack}>{stack}</li>
           ))}
         </ul>
       )}
+    </div>
+  );
+
+  // Project cell for descriptions, images and buttons
+  const supportCell = (
+    <div className={styles.card}>
+      <h2>{project.title}</h2>
+      <p>{project.tag}</p>
+      <h3>Developer Summary</h3>
+      <p>{project.desc}</p>
+      <div>
+        <img src={project.image} alt="yep I'll do this one day" />
+      </div>
       <div className={styles.buttonContainer}>
         <a
           className={"button"}
@@ -48,19 +61,6 @@ function ProjectCard({ isLeft, project }) {
         >
           Github Code
         </a>
-      </div>
-    </div>
-  );
-
-  // Project cell for descriptions, images and buttons
-  const supportCell = (
-    <div className={styles.card}>
-      <h2>{project.title}</h2>
-      <p>{project.tag}</p>
-      <h3>Developer Summary:</h3>
-      <p>{project.desc}</p>
-      <div>
-        <img src={project.image} alt="yep I'll do this one day" />
       </div>
     </div>
   );
