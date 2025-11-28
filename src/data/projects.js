@@ -51,7 +51,17 @@ export const projects = [
       "UI overlay for score, high score, and restart prompts",
       "Simple game state management (ready, playing, game over) to control input and resets",
     ],
-    techStack: [],
+    techStack: [
+      "Godot Engine (GDScript) — core engine used for all gameplay logic",
+      "GDScript — scripting language used for physics, collisions, input, and game loop",
+      "Aseprite — custom pixel-art assets (ship, meteorites, effects)",
+      "Spritesheets & Frame Animation — for meteorite movement and impact visuals",
+      "Git & GitHub — version control and project tracking",
+      "Godot Script Editor — development environment",
+      "HTML5 — structure and elements",
+      "CSS3 — styling and responsive layout",
+      "JavaScript (ES6+) — functionality and app logic",
+    ],
     url: "",
     gitHub: "",
     status: "active",
@@ -236,7 +246,7 @@ export const projects = [
     title: "Daily Horoscope",
     desc: `This interactive web app lets users discover their zodiac sign and view personalized horoscope readings for yesterday, today, and tomorrow. Users can either select their birthday through a guided modal or simply click on a zodiac symbol from the main screen. Once a date is chosen, the app automatically determines the correct star sign by comparing the user's birth date with a predefined zodiac date range. It then fetches detailed horoscope data—including mood, compatibility, lucky number, and daily description—from an external horoscope API.
 
-    The interface is designed with smooth transitions, responsive layouts, and dynamic UI states. Hover effects reveal extra zodiac information on larger screens, while smaller screens adjust to show all content fully expanded. Users can toggle between the three daily horoscope panels or navigate back to the zodiac selection view using animated controls. Overall, the app blends clean logic, intuitive interactions, and API-driven content to create a polished, engaging horoscope experience.
+    The interface is designed with smooth transitions, responsive layouts, and dynamic UI states. Hover effects reveal extra zodiac information on larger screens, while smaller screens adjust to show all content fully expanded. Users can toggle between the three daily horoscope panels or navigate back to the zodiac selection view using animated controls. Overall, the app blends clean logic, intuitive interactions, and API-driven content to create a polished, engaging horoscope experience. Images assets were all custom designed using Adobe Photoshop.
     
     Unfortunately soon after launch the API went down and was no long available. I felt this app had a lot of cool features beyond the API call and was still worth showcasing here in my portfolio.`,
     features: [
@@ -261,13 +271,14 @@ export const projects = [
       "HTML5 — structural layout",
       "CSS3 — animations, transitions, and responsive design",
       "SASS / SCSS — if you used nested styling or variables",
+      "Adobe Photoshop - Asset generation",
       "External Horoscope API",
       "Git & GitHub — version control",
       "VS Code — development environment",
       "Browser DevTools — debugging, layout inspection, API testing",
     ],
     url: "https://deanlane-dailyhoroscopeapp.netlify.app/",
-    gitHub: "https://github.com/JC47-P2-Sabrina-Dean/horoscope-app",
+    gitHub: "https://github.com/deanglane/horoscope-app/tree/main",
     status: "active",
     highlight: false,
     featureReel: false,
@@ -381,8 +392,8 @@ export const projects = [
       "VS Code and React DevTools for development and debugging",
       "Node & npm for dependency management and local environment",
     ],
-    url: "",
-    gitHub: "https://github.com/deanglane/stopwatch/tree/development",
+    url: "https://stopwatch-dean-lane.netlify.app/",
+    gitHub: "https://github.com/deanglane/stopwatch",
     status: "active",
     highlight: false,
     featureReel: false,

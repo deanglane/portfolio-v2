@@ -2,12 +2,19 @@ import React from "react";
 import styles from "./ProjectCard.module.css";
 
 function ProjectCard({ isLeft, project }) {
+  // check if the projects object as a feature section and a tech stack section
   const hasFeatures = project.features && project.features.length > 0;
   const hasTechStack = project.techStack && project.techStack.length > 0;
 
+  // Formatting the timeline date
+  const date = new Date(project.date);
+  const year = date.getFullYear();
+  const month = date.toLocaleString("en-US", { month: "long" }).toUpperCase();
+  const formattedDate = `${year} - ${month}`;
+
+  // project cell for features and Tech stack
   const projectCell = (
-    <div className={`${styles["timelineDate-left"]} ${styles.card}`}>
-      <small>{new Date(project.date).toLocaleDateString()}</small>
+    <div className={styles.card}>
       <h3>Features:</h3>
       {hasFeatures && (
         <ul>
@@ -25,16 +32,27 @@ function ProjectCard({ isLeft, project }) {
         </ul>
       )}
       <div className={styles.buttonContainer}>
-        <a className={"button"} href={project.url}>
+        <a
+          className={"button"}
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Live Preview
         </a>
-        <a className={"button"} href={project.gitHub}>
+        <a
+          className={"button"}
+          href={project.gitHub}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Github Code
         </a>
       </div>
     </div>
   );
 
+  // Project cell for descriptions, images and buttons
   const supportCell = (
     <div className={styles.card}>
       <h2>{project.title}</h2>
@@ -54,6 +72,7 @@ function ProjectCard({ isLeft, project }) {
 
       {/* Center marker cell (line + dot) */}
       <div className={styles.markerCell}>
+        <small className={styles.date}>{formattedDate}</small>
         <span className={styles.dot} />
       </div>
 

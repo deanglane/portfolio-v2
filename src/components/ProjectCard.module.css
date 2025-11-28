@@ -15,19 +15,19 @@
   grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
   align-items: start; /* aligns left/right cards at the top */
   padding-top: 0.1rem; /* tiny buffer to help dot placement */
+  margin-top: 5rem;
 }
 
 /* Center narrow column - still needed for layout */
 .markerCell {
   grid-column: 2;
-  /* no centering needed now */
 }
 
 /* DOT — now absolutely positioned relative to the .item row */
-.dot {
+/* .dot {
   position: absolute;
-  top: -6px; /* aligns dot to top of card */
-  left: 50%; /* center horizontally */
+  top: -6px; 
+  left: 50%; 
   transform: translateX(-50%);
 
   width: 14px;
@@ -36,6 +36,19 @@
   background: #fff;
   border: 3px solid #666;
   z-index: 5;
+} */
+
+.date {
+  position: absolute;
+  top: -35px; /* aligns dot to top of card */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%);
+  z-index: 5;
+
+  background-color: #ffffff;
+  border: 3px solid #666;
+  border-radius: 10px;
+  padding: 0.3rem;
 }
 
 /* Your cards (left and right use the same style) */
@@ -50,9 +63,8 @@
   justify-content: center;
 }
 
-/* Date stamp on other side of card */
-.timelineDate-left {
-  text-align: right;
+.card ul {
+  list-style: circle;
 }
 
 /* The card for left side */
