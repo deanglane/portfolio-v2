@@ -63,6 +63,10 @@
   justify-content: center;
 }
 
+.card p {
+  text-align: justify;
+}
+
 .card ul {
   list-style: circle;
 }

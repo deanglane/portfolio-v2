@@ -31,6 +31,19 @@ ul {
   list-style: none;
 }
 
+p,
+li {
+  font-size: 1.05rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
 img {
   max-width: 100%; /* Makes all images become responsive if the parent container wants to shrink */
   display: block; /* removes extra padding at bottom of images */

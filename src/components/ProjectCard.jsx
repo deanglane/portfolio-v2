@@ -40,7 +40,10 @@ function ProjectCard({ isLeft, project }) {
       <h2>{project.title}</h2>
       <p>{project.tag}</p>
       <h3>Developer Summary</h3>
-      <p>{project.desc}</p>
+      {/* <p>{project.desc}</p> */}
+      {project.desc.map((para, i) => (
+        <p key={i}>{para}</p>
+      ))}
       <div>
         <img src={project.image} alt="yep I'll do this one day" />
       </div>

@@ -14,11 +14,13 @@ export const projects = [
   {
     date: "2026-01-10",
     title: "Portfolio 2.0",
-    desc: ` This is the second evolution of my portfolio — a complete rebuild of my original site, now crafted in React to better showcase both my skills and my growth as a developer. It’s more than a gallery of work; it’s a home for all the creative projects I dive into on my “day off.”
+    desc: [
+      ` This is the second evolution of my portfolio — a complete rebuild of my original site, now crafted in React to better showcase both my skills and my growth as a developer. It’s more than a gallery of work; it’s a home for all the creative projects I dive into on my “day off.`,
 
-    From front-end experiments and indie game prototypes to photography, artwork, cooking, music, and future apps, this space is designed to evolve right alongside me. As I learn new tools and explore new mediums, this portfolio will expand with new features, fresh ideas, and playful interactions.
-    
-    Think of it as a living creative playground — a place where I can show what I’ve built, what I’m learning, and everything I love making.`,
+      `From front-end experiments and indie game prototypes to photography, artwork, cooking, music, and future apps, this space is designed to evolve right alongside me. As I learn new tools and explore new mediums, this portfolio will expand with new features, fresh ideas, and playful interactions.`,
+
+      `Think of it as a living creative playground — a place where I can show what I’ve built, what I’m learning, and everything I love making.`,
+    ],
     features: [],
     techStack: [],
     url: "https://dayoffdev.com",
@@ -32,11 +34,13 @@ export const projects = [
     date: "2024-12-15",
     title: "Tappy Bird Game",
     tag: "Keep the plane flying while avoiding the deadly lasers",
-    desc: `Tappy Plane is a Flappy Bird–style arcade game built in the Godot engine using GDScript. It recreates the classic tap-to-fly mechanics with smooth physics, a scrolling world, and increasingly challenging obstacles.
+    desc: [
+      `Tappy Plane is a Flappy Bird–style arcade game built in the Godot engine using GDScript. It recreates the classic tap-to-fly mechanics with smooth physics, a scrolling world, and increasingly challenging obstacles.`,
 
-    While building it, I learned how to use Godot’s 2D node system to set up a character with gravity and jump impulses, create a parallax-scrolling background, and manage collisions between the player, lasers, and the ground. I also implemented score tracking, high-score saving, and simple game states (ready, playing, game over) to make the loop feel polished and replayable.
-    
-    It’s a small but addictive project that let me practice core Godot patterns like scenes, instancing, signals, and lightweight UI — all wrapped in a fun, fast-paced game.`,
+      `While building it, I learned how to use Godot’s 2D node system to set up a character with gravity and jump impulses, create a parallax-scrolling background, and manage collisions between the player, lasers, and the ground. I also implemented score tracking, high-score saving, and simple game states (ready, playing, game over) to make the loop feel polished and replayable.`,
+
+      `It’s a small but addictive project that let me practice core Godot patterns like scenes, instancing, signals, and lightweight UI — all wrapped in a fun, fast-paced game.`,
+    ],
     features: [
       "Built in Godot Engine using GDScript",
       "Player implemented as a 2D body with a CollisionShape2D and custom gravity / jump impulse",
@@ -73,11 +77,13 @@ export const projects = [
     date: "2024-10-01",
     title: "Stellar Harvest Game",
     tag: "Collect the valuable meteorites before the destroy your planet",
-    desc: `Stellar Harvest was my first game project, inspired by the classic mechanics of Pong but reimagined with a more dynamic, arcade-style loop. You pilot a freight ship in low orbit around its home planet while meteorites streak across space. Each meteorite carries valuable minerals that can be collected by intercepting them—miss one, and the resulting impact destroys your home world and ends the run.
+    desc: [
+      `Stellar Harvest was my first game project, inspired by the classic mechanics of Pong but reimagined with a more dynamic, arcade-style loop. You pilot a freight ship in low orbit around its home planet while meteorites streak across space. Each meteorite carries valuable minerals that can be collected by intercepting them—miss one, and the resulting impact destroys your home world and ends the run.`,
 
-    One of my goals was to modernize the traditional Pong interaction. Instead of simply bouncing the ball back, I experimented with a mechanic where the meteorite is “absorbed” into the ship on contact, triggering scoring events and visual feedback. Through this project I learned core game-development concepts such as basic physics (gravity and velocity), score handling, collision detection, and random object generation. I also designed all the sprite assets myself using Aseprite, which gave me a deeper appreciation for pixel-art workflows.
-    
-    Stellar Harvest was a huge milestone for me as a developer. It was the first time I combined gameplay design, coding logic, and visual art into a single project. I plan to revisit it in the future and expand the mechanics with the new skills I’ve gained in game development.`,
+      `One of my goals was to modernize the traditional Pong interaction. Instead of simply bouncing the ball back, I experimented with a mechanic where the meteorite is “absorbed” into the ship on contact, triggering scoring events and visual feedback. Through this project I learned core game-development concepts such as basic physics (gravity and velocity), score handling, collision detection, and random object generation. I also designed all the sprite assets myself using Aseprite, which gave me a deeper appreciation for pixel-art workflows.`,
+
+      `Stellar Harvest was a huge milestone for me as a developer. It was the first time I combined gameplay design, coding logic, and visual art into a single project. I plan to revisit it in the future and expand the mechanics with the new skills I’ve gained in game development.`,
+    ],
     features: [
       "Physics System - Basic gravity and velocity handling for meteorite movement and Adjustable speed curves for increasing difficulty",
       "Player Controls - Keyboard arrow key input for precise ship movement with Smooth horizontal acceleration and deceleration",
@@ -110,13 +116,15 @@ export const projects = [
   {
     date: "2023-08-01",
     title: "Battle Rockets",
-    desc: `Battle Rockets was a collaborative project built with four classmates during my time at Juno College. Our goal was to reimagine the classic Battleship formula as a space-themed strategy game where players race to locate and destroy their opponent’s rockets before their own fleet is discovered. The project also required building an AI-controlled opponent (NPC), and the entire game had to be implemented in React without the use of external libraries.
+    desc: [
+      `Battle Rockets was a collaborative project built with four classmates during my time at Juno College. Our goal was to reimagine the classic Battleship formula as a space-themed strategy game where players race to locate and destroy their opponent’s rockets before their own fleet is discovered. The project also required building an AI-controlled opponent (NPC), and the entire game had to be implemented in React without the use of external libraries.`,
 
-    I took on the role of project manager for the development process. This involved coordinating team responsibilities, designing the project scope, and documenting all mechanics before development began. It pushed us to think critically about planning, feature breakdowns, and realistic timelines—skills that became just as valuable as the coding itself.
-    
-    From a technical standpoint, we tackled several challenges: creating a reusable grid system using CSS Grid, implementing a drag-and-drop mechanic for ship placement and rotation, generating randomized NPC ship layouts, and building turn-based game logic that allowed the AI to choose grid coordinates, track previous guesses, and identify hits, misses, and destroyed ships.
-    
-    Throughout the project, I gained a deeper understanding of React’s rendering patterns, debugging tools in the browser, teamwork with GitHub version control, and the process of building and merging features within a collaborative environment. Despite a few small quirks, Battle Rockets was a successful build that our whole team was proud of—and it pushed all of us to level up as front-end developers.`,
+      `I took on the role of project manager for the development process. This involved coordinating team responsibilities, designing the project scope, and documenting all mechanics before development began. It pushed us to think critically about planning, feature breakdowns, and realistic timelines—skills that became just as valuable as the coding itself.`,
+
+      `From a technical standpoint, we tackled several challenges: creating a reusable grid system using CSS Grid, implementing a drag-and-drop mechanic for ship placement and rotation, generating randomized NPC ship layouts, and building turn-based game logic that allowed the AI to choose grid coordinates, track previous guesses, and identify hits, misses, and destroyed ships.`,
+
+      `Throughout the project, I gained a deeper understanding of React’s rendering patterns, debugging tools in the browser, teamwork with GitHub version control, and the process of building and merging features within a collaborative environment. Despite a few small quirks, Battle Rockets was a successful build that our whole team was proud of—and it pushed all of us to level up as front-end developers.`,
+    ],
     features: [
       "Turn-based strategy gameplay inspired by Battleship",
       "Player vs AI mode with randomized NPC ship placement",
@@ -160,11 +168,13 @@ export const projects = [
   {
     date: "2023-06-01",
     title: "Flash it!",
-    desc: `Flash It is a web-based study tool that allows users to create, store, and review their own flashcard decks. This was the first app I built fully from concept to completion, using the skills I developed throughout my boot camp. The project is built with React, JavaScript, and Firebase, and intentionally avoids any external libraries to practice building functionality from scratch.
+    desc: [
+      `Flash It is a web-based study tool that allows users to create, store, and review their own flashcard decks. This was the first app I built fully from concept to completion, using the skills I developed throughout my boot camp. The project is built with React, JavaScript, and Firebase, and intentionally avoids any external libraries to practice building functionality from scratch.`,
 
-    A core goal of the project was implementing user authentication through Firebase so each user could create a unique account and store their personal flashcards securely. Building a responsive navigation system that adapts to the user’s authentication state was one of the early challenges—especially ensuring the UI updates immediately when a user logs in or out. This process taught me a lot about React hooks (such as useEffect, useState, and navigation-related hooks) and how to use conditional rendering and ternary expressions effectively.
-    
-    This project pushed me to think more deeply about how different components, data flows, and app features interact with each other. I plan to revisit Flash It in the future and expand it with a stronger UX flow, improved authentication handling, card previews and editing tools, and potentially rich text formatting for more expressive flashcards.`,
+      `A core goal of the project was implementing user authentication through Firebase so each user could create a unique account and store their personal flashcards securely. Building a responsive navigation system that adapts to the user’s authentication state was one of the early challenges—especially ensuring the UI updates immediately when a user logs in or out. This process taught me a lot about React hooks (such as useEffect, useState, and navigation-related hooks) and how to use conditional rendering and ternary expressions effectively.`,
+
+      `This project pushed me to think more deeply about how different components, data flows, and app features interact with each other. I plan to revisit Flash It in the future and expand it with a stronger UX flow, improved authentication handling, card previews and editing tools, and potentially rich text formatting for more expressive flashcards.`,
+    ],
     features: [
       "Create, edit, and review personalized flashcards",
       "User authentication with Firebase Auth",
@@ -203,13 +213,15 @@ export const projects = [
   {
     date: "2023-04-25",
     title: "Pokedex",
-    desc: `The Pokémon Pokédex is a web app inspired by the original 1990 DMG Game Boy design. It recreates the hardware aesthetic entirely with CSS and allows users to browse Pokémon, view their stats, and explore evolution chains—just like a functional in-game Pokédex.
+    desc: [
+      `The Pokémon Pokédex is a web app inspired by the original 1990 DMG Game Boy design. It recreates the hardware aesthetic entirely with CSS and allows users to browse Pokémon, view their stats, and explore evolution chains—just like a functional in-game Pokédex.`,
 
-    The project is built with JavaScript and powered by the PokéAPI REST API, a free and structured Pokémon data service. Using simple REST endpoints, each Pokémon can be fetched by ID or name, returning consistent JSON data including names, sprites, stats, height, weight, and types. Because the API follows REST principles, responses are predictable, lightweight, and fast—making data handling straightforward.
-    
-    To recreate the Game Boy itself, I used SASS, a CSS preprocessor that allowed me to take advantage of variables, nesting, and reusable mixins. This made the complex “CSS art” process far more manageable and helped me produce a clean, maintainable styling structure.
-    
-    This project strengthened my understanding of API architecture, dynamic rendering, and data fetching patterns. It also pushed me creatively—forcing me to stretch CSS in unusual ways to bring a physical retro device to life on the web. It definitely won’t be my last experiment with CSS art.`,
+      `The project is built with JavaScript and powered by the PokéAPI REST API, a free and structured Pokémon data service. Using simple REST endpoints, each Pokémon can be fetched by ID or name, returning consistent JSON data including names, sprites, stats, height, weight, and types. Because the API follows REST principles, responses are predictable, lightweight, and fast—making data handling straightforward.`,
+
+      `To recreate the Game Boy itself, I used SASS, a CSS preprocessor that allowed me to take advantage of variables, nesting, and reusable mixins. This made the complex “CSS art” process far more manageable and helped me produce a clean, maintainable styling structure.`,
+
+      `This project strengthened my understanding of API architecture, dynamic rendering, and data fetching patterns. It also pushed me creatively—forcing me to stretch CSS in unusual ways to bring a physical retro device to life on the web. It definitely won’t be my last experiment with CSS art.`,
+    ],
     features: [
       "Browse all Pokémon using the PokéAPI REST API",
       "Fetch Pokémon data by name or ID",
@@ -244,11 +256,13 @@ export const projects = [
   {
     date: "2023-04-13",
     title: "Daily Horoscope",
-    desc: `This interactive web app lets users discover their zodiac sign and view personalized horoscope readings for yesterday, today, and tomorrow. Users can either select their birthday through a guided modal or simply click on a zodiac symbol from the main screen. Once a date is chosen, the app automatically determines the correct star sign by comparing the user's birth date with a predefined zodiac date range. It then fetches detailed horoscope data—including mood, compatibility, lucky number, and daily description—from an external horoscope API.
+    desc: [
+      `This interactive web app lets users discover their zodiac sign and view personalized horoscope readings for yesterday, today, and tomorrow. Users can either select their birthday through a guided modal or simply click on a zodiac symbol from the main screen. Once a date is chosen, the app automatically determines the correct star sign by comparing the user's birth date with a predefined zodiac date range. It then fetches detailed horoscope data—including mood, compatibility, lucky number, and daily description—from an external horoscope API.`,
 
-    The interface is designed with smooth transitions, responsive layouts, and dynamic UI states. Hover effects reveal extra zodiac information on larger screens, while smaller screens adjust to show all content fully expanded. Users can toggle between the three daily horoscope panels or navigate back to the zodiac selection view using animated controls. Overall, the app blends clean logic, intuitive interactions, and API-driven content to create a polished, engaging horoscope experience. Images assets were all custom designed using Adobe Photoshop.
-    
-    Unfortunately soon after launch the API went down and was no long available. I felt this app had a lot of cool features beyond the API call and was still worth showcasing here in my portfolio.`,
+      `The interface is designed with smooth transitions, responsive layouts, and dynamic UI states. Hover effects reveal extra zodiac information on larger screens, while smaller screens adjust to show all content fully expanded. Users can toggle between the three daily horoscope panels or navigate back to the zodiac selection view using animated controls. Overall, the app blends clean logic, intuitive interactions, and API-driven content to create a polished, engaging horoscope experience. Images assets were all custom designed using Adobe Photoshop.`,
+
+      `Unfortunately soon after launch the API went down and was no long available. I felt this app had a lot of cool features beyond the API call and was still worth showcasing here in my portfolio.`,
+    ],
     features: [
       "Determine zodiac sign based on user-selected birth date",
       "Select birth date using a guided modal interface",
@@ -287,11 +301,13 @@ export const projects = [
   {
     date: "2023-02-01",
     title: "Bar one",
-    desc: `Bar One started as a PDF-to-website conversion project that pushed my early front-end skills in both layout and interaction design. I rebuilt a multi-page bar and restaurant site from a static mockup using semantic HTML and custom CSS, focusing on responsive structure, accessible navigation, and a visually cohesive brand experience.
+    desc: [
+      `Bar One started as a PDF-to-website conversion project that pushed my early front-end skills in both layout and interaction design. I rebuilt a multi-page bar and restaurant site from a static mockup using semantic HTML and custom CSS, focusing on responsive structure, accessible navigation, and a visually cohesive brand experience.`,
 
-    Once the layout was in place, I used it as a playground to experiment with my first “from-scratch” JavaScript features. On the menu page, I built an interactive ordering flow where users can click any menu item to open a modal, preview the selection, and add it to a cart-style order panel. Each order is stored in arrays, allowing items to be added, removed, and recalculated in real time—including subtotal, tax, and total.
-    
-    This project taught me how to wire up DOM events, work with arrays and reduce() for totals, manipulate the DOM to render dynamic content, and debug using the browser console. Bar One was one of the first times I designed my own JavaScript flows rather than following a tutorial, and it became a key milestone in understanding how state and UI work together`,
+      `Once the layout was in place, I used it as a playground to experiment with my first “from-scratch” JavaScript features. On the menu page, I built an interactive ordering flow where users can click any menu item to open a modal, preview the selection, and add it to a cart-style order panel. Each order is stored in arrays, allowing items to be added, removed, and recalculated in real time—including subtotal, tax, and total.`,
+
+      `This project taught me how to wire up DOM events, work with arrays and reduce() for totals, manipulate the DOM to render dynamic content, and debug using the browser console. Bar One was one of the first times I designed my own JavaScript flows rather than following a tutorial, and it became a key milestone in understanding how state and UI work together`,
+    ],
     features: [
       "Multi-page bar and restaurant website built from a PDF mockup",
       "Responsive layout with semantic HTML structure",
@@ -329,11 +345,12 @@ export const projects = [
   {
     date: "2022-12-01",
     title: "Hangry Tummy",
-    desc: `Hangry Tummy is a PDF-to-website conversion project based on a single-page restaurant landing design and an accompanying style guide that specified typography, colours, spacing, and overall visual theme. My goal was to recreate the layout in code as closely as possible while making it responsive and accessible.
+    desc: [
+      `Hangry Tummy is a PDF-to-website conversion project based on a single-page restaurant landing design and an accompanying style guide that specified typography, colours, spacing, and overall visual theme. My goal was to recreate the layout in code as closely as possible while making it responsive and accessible.`,
+      `This was one of my earliest attempts at building a full web page from scratch, focusing on flexbox-based layout, responsive behaviour, and mobile navigation patterns. I implemented a flexible section structure, image handling that adapts across screen sizes, and a mobile menu to accommodate smaller viewports.`,
 
-    This was one of my earliest attempts at building a full web page from scratch, focusing on flexbox-based layout, responsive behaviour, and mobile navigation patterns. I implemented a flexible section structure, image handling that adapts across screen sizes, and a mobile menu to accommodate smaller viewports.
-    
-    Beyond just matching the design, this project taught me how to think more like a front-end developer: balancing visual fidelity with clean HTML structure, using flexbox for layout instead of absolute positioning, and keeping accessibility and client-style constraints in mind—all under a tight deadline.`,
+      `Beyond just matching the design, this project taught me how to think more like a front-end developer: balancing visual fidelity with clean HTML structure, using flexbox for layout instead of absolute positioning, and keeping accessibility and client-style constraints in mind—all under a tight deadline.`,
+    ],
     features: [
       "Pixel-inspired conversion from PDF mockup and style guide",
       "Responsive single-page restaurant landing layout",
@@ -363,13 +380,15 @@ export const projects = [
   {
     date: "2024-08-12",
     title: "Stopwatch",
-    desc: `The Shopify Stopwatch Challenge was a technical assessment designed to evaluate my ability to work with React, TypeScript, and testing libraries under real development conditions. The assignment required me to build a fully functional stopwatch application from a provided project scaffold, following strict version control workflows and professional code quality standards.
+    desc: [
+      `The Shopify Stopwatch Challenge was a technical assessment designed to evaluate my ability to work with React, TypeScript, and testing libraries under real development conditions. The assignment required me to build a fully functional stopwatch application from a provided project scaffold, following strict version control workflows and professional code quality standards.`,
 
-    The stopwatch supports starting, stopping, resetting, and recording lap times — all managed through typed React state and modular components. I built the core logic inside reusable components, wrote TypeScript interfaces for props and state, and implemented unit tests to verify functionality such as timing accuracy, lap behavior, and UI state changes.
-    
-    This was my first time building a feature using TypeScript and applying React Testing Library to write meaningful unit tests. It pushed me to think more deeply about typing, component boundaries, immutability, and test-driven development. It also simulated a real developer workflow: working in a forked repo, building on a feature branch, committing regularly, and submitting a clean pull request for review.
-    
-    The challenge strengthened my confidence in React’s architecture, formal development processes, and writing maintainable, production-quality code.`,
+      `The stopwatch supports starting, stopping, resetting, and recording lap times, all managed through typed React state and modular components. I built the core logic inside reusable components, wrote TypeScript interfaces for props and state, and implemented unit tests to verify functionality such as timing accuracy, lap behavior, and UI state changes.`,
+
+      `This was my first time building a feature using TypeScript and applying React Testing Library to write meaningful unit tests. It pushed me to think more deeply about typing, component boundaries, immutability, and test-driven development. It also simulated a real developer workflow: working in a forked repo, building on a feature branch, committing regularly, and submitting a clean pull request for review.`,
+
+      `The challenge strengthened my confidence in React’s architecture, formal development processes, and writing maintainable, production-quality code.`,
+    ],
     features: [
       "Start and stop stopwatch functionality using typed React state",
       "Reset button that clears time back to zero",
