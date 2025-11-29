@@ -14,12 +14,12 @@ function Projects() {
   return (
     <section>
       <div className="wrapper">
-        <h2>Projects</h2>
-        <p>
+        <h1 className={styles.pageTitle}>Projects</h1>
+        <p className={styles.pageTag}>
           “Turning coffee, curiosity and code into something visually amazing
           for the web.”
         </p>
-        <h3>Today's Specials</h3>
+        <h2>Highlights</h2>
         {/* slider specials gallery */}
         <div className={styles["specials-container"]}>
           <div className={styles["specials-viewport"]}>
@@ -46,7 +46,7 @@ function Projects() {
       </div>
 
       <div>
-        <h2>Project's Timeline</h2>
+        <h2 className={styles.timelineTitle}>Project's Timeline</h2>
         <div className={styles.timeline}>
           <ul className={styles.list}>
             {activeSorted.map((project, i) => {

@@ -14,18 +14,19 @@ export const projects = [
   {
     date: "2026-01-10",
     title: "Portfolio 2.0",
+    tag: `"My best version of my portfolio"`,
     desc: [
       ` This is the second evolution of my portfolio — a complete rebuild of my original site, now crafted in React to better showcase both my skills and my growth as a developer. It’s more than a gallery of work; it’s a home for all the creative projects I dive into on my “day off.`,
 
       `From front-end experiments and indie game prototypes to photography, artwork, cooking, music, and future apps, this space is designed to evolve right alongside me. As I learn new tools and explore new mediums, this portfolio will expand with new features, fresh ideas, and playful interactions.`,
 
-      `Think of it as a living creative playground — a place where I can show what I’ve built, what I’m learning, and everything I love making.`,
+      `Think of it as a living creative playground. A place where I can show what I’ve built, what I’m learning, and everything I love making.`,
     ],
     features: [],
     techStack: [],
     url: "https://dayoffdev.com",
     gitHub: "https://github.com/deanglane/portfolio-v2",
-    status: "Coming Soon",
+    status: "Active",
     highlight: true,
     featureReel: false,
     image: portfolio,
@@ -33,7 +34,7 @@ export const projects = [
   {
     date: "2024-12-15",
     title: "Tappy Bird Game",
-    tag: "Keep the plane flying while avoiding the deadly lasers",
+    tag: `"Keep the plane flying while avoiding the deadly lasers"`,
     desc: [
       `Tappy Plane is a Flappy Bird–style arcade game built in the Godot engine using GDScript. It recreates the classic tap-to-fly mechanics with smooth physics, a scrolling world, and increasingly challenging obstacles.`,
 
@@ -76,7 +77,7 @@ export const projects = [
   {
     date: "2024-10-01",
     title: "Stellar Harvest Game",
-    tag: "Collect the valuable meteorites before the destroy your planet",
+    tag: `"Collect the valuable meteorites before they destroy your planet"`,
     desc: [
       `Stellar Harvest was my first game project, inspired by the classic mechanics of Pong but reimagined with a more dynamic, arcade-style loop. You pilot a freight ship in low orbit around its home planet while meteorites streak across space. Each meteorite carries valuable minerals that can be collected by intercepting them—miss one, and the resulting impact destroys your home world and ends the run.`,
 
@@ -116,6 +117,7 @@ export const projects = [
   {
     date: "2023-08-01",
     title: "Battle Rockets",
+    tag: `"Find and destroy the competitors ships to win the space race"`,
     desc: [
       `Battle Rockets was a collaborative project built with four classmates during my time at Juno College. Our goal was to reimagine the classic Battleship formula as a space-themed strategy game where players race to locate and destroy their opponent’s rockets before their own fleet is discovered. The project also required building an AI-controlled opponent (NPC), and the entire game had to be implemented in React without the use of external libraries.`,
 
@@ -168,6 +170,7 @@ export const projects = [
   {
     date: "2023-06-01",
     title: "Flash it!",
+    tag: `"Build and review your own custom flash cards for studying"`,
     desc: [
       `Flash It is a web-based study tool that allows users to create, store, and review their own flashcard decks. This was the first app I built fully from concept to completion, using the skills I developed throughout my boot camp. The project is built with React, JavaScript, and Firebase, and intentionally avoids any external libraries to practice building functionality from scratch.`,
 
@@ -213,6 +216,7 @@ export const projects = [
   {
     date: "2023-04-25",
     title: "Pokedex",
+    tag: `"Search hundreds of Pokemon stats in a custom CSS built original Gameboy"`,
     desc: [
       `The Pokémon Pokédex is a web app inspired by the original 1990 DMG Game Boy design. It recreates the hardware aesthetic entirely with CSS and allows users to browse Pokémon, view their stats, and explore evolution chains—just like a functional in-game Pokédex.`,
 
@@ -256,6 +260,7 @@ export const projects = [
   {
     date: "2023-04-13",
     title: "Daily Horoscope",
+    tag: `"Find out you past, present and future horoscopes based on your star sign"`,
     desc: [
       `This interactive web app lets users discover their zodiac sign and view personalized horoscope readings for yesterday, today, and tomorrow. Users can either select their birthday through a guided modal or simply click on a zodiac symbol from the main screen. Once a date is chosen, the app automatically determines the correct star sign by comparing the user's birth date with a predefined zodiac date range. It then fetches detailed horoscope data—including mood, compatibility, lucky number, and daily description—from an external horoscope API.`,
 
@@ -301,6 +306,7 @@ export const projects = [
   {
     date: "2023-02-01",
     title: "Bar one",
+    tag: `"A restaurant website where you can order from their menu or read their blog posts"`,
     desc: [
       `Bar One started as a PDF-to-website conversion project that pushed my early front-end skills in both layout and interaction design. I rebuilt a multi-page bar and restaurant site from a static mockup using semantic HTML and custom CSS, focusing on responsive structure, accessible navigation, and a visually cohesive brand experience.`,
 
@@ -345,6 +351,7 @@ export const projects = [
   {
     date: "2022-12-01",
     title: "Hangry Tummy",
+    tag: `"A landing page for a fast food burger restaurant"`,
     desc: [
       `Hangry Tummy is a PDF-to-website conversion project based on a single-page restaurant landing design and an accompanying style guide that specified typography, colours, spacing, and overall visual theme. My goal was to recreate the layout in code as closely as possible while making it responsive and accessible.`,
       `This was one of my earliest attempts at building a full web page from scratch, focusing on flexbox-based layout, responsive behaviour, and mobile navigation patterns. I implemented a flexible section structure, image handling that adapts across screen sizes, and a mobile menu to accommodate smaller viewports.`,
@@ -380,6 +387,7 @@ export const projects = [
   {
     date: "2024-08-12",
     title: "Stopwatch",
+    tag: `"A basic stop watch to track your times"`,
     desc: [
       `The Shopify Stopwatch Challenge was a technical assessment designed to evaluate my ability to work with React, TypeScript, and testing libraries under real development conditions. The assignment required me to build a fully functional stopwatch application from a provided project scaffold, following strict version control workflows and professional code quality standards.`,
 

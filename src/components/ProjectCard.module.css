@@ -1,12 +1,4 @@
 /* List layout */
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /* vertical space between rows */
-}
 
 /* (li) Each row: 3 columns: left | marker | right */
 .item {
@@ -15,7 +7,16 @@
   grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
   align-items: start; /* aligns left/right cards at the top */
   padding-top: 0.1rem; /* tiny buffer to help dot placement */
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* vertical space between rows */
 }
 
 /* Center narrow column - still needed for layout */
@@ -65,6 +66,12 @@
 
 .card p {
   text-align: justify;
+}
+
+.card p:first-of-type {
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .card ul {

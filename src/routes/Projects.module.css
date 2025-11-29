@@ -1,3 +1,13 @@
+.pageTitle,
+.pageTag,
+.timelineTitle {
+  text-align: center;
+}
+
+.timelineTitle {
+  margin: 3rem 0 0 0;
+}
+
 .specials-container {
   display: flex;
   flex-direction: column;
@@ -18,10 +28,9 @@
 /* Outer container */
 .timeline {
   position: relative;
-  padding: 2rem 0;
 }
 
-/* Continuous vertical line */
+/* Continuous vertical line - wavy */
 .timeline::before {
   content: "";
   position: absolute;
@@ -37,6 +46,7 @@
   background-size: 12px 200px;
 }
 
+/* Continuous vertical line - straight */
 /* .timeline::before {
   content: "";
   position: absolute;
