@@ -37,7 +37,7 @@ function Workshop() {
         <h2>Workshop Area</h2>
         <p>A page to test adding new content</p>
         {/* Slides testing */}
-        {/* <div className={styles["slides-div"]}>
+        <div className={styles["slides-div"]}>
           <div className={styles["slides-container"]}>
             <h3>Slider.js</h3>
             <div className={styles["slides-viewport"]}>
@@ -64,7 +64,7 @@ function Workshop() {
               </Swiper>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className={styles.box}>
           <span className={styles.dot} />
         </div>

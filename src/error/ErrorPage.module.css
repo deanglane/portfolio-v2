@@ -132,6 +132,34 @@
   border-radius: 5px;
 }
 
+.terminal {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--text-main);
+  margin-top: 2rem; /* ensures it sits BELOW the card */
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.terminalHeader {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.terminalBody {
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
 @keyframes float {
   0%,
   100% {

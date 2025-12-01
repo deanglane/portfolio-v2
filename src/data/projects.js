@@ -1,4 +1,6 @@
 // projects.js
+import { v4 as uuidv4 } from "uuid";
+
 import stellar from "../assets/images/screen-shots/stellar-harvest-thumbnail.png";
 import barOne from "../assets/images/screen-shots/bar_one_new.png";
 import battleRockets from "../assets/images/screen-shots/battle_rockets_new.png";
@@ -12,6 +14,7 @@ import stopwatch from "../assets/images/screen-shots/stopwatch.png";
 
 export const projects = [
   {
+    id: uuidv4(),
     date: "2026-01-10",
     title: "Portfolio 2.0",
     tag: `"My best version of my portfolio"`,
@@ -27,11 +30,16 @@ export const projects = [
     url: "https://dayoffdev.com",
     gitHub: "https://github.com/deanglane/portfolio-v2",
     status: "Active",
-    highlight: false,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: portfolio,
   },
   {
+    id: uuidv4(),
     date: "2024-12-15",
     title: "Tappy Bird Game",
     tag: `"Keep the plane flying while avoiding the deadly lasers"`,
@@ -70,11 +78,16 @@ export const projects = [
     url: "",
     gitHub: "",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: true,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: tappyPlane,
   },
   {
+    id: uuidv4(),
     date: "2024-10-01",
     title: "Stellar Harvest Game",
     tag: `"Collect the valuable meteorites before they destroy your planet"`,
@@ -110,11 +123,16 @@ export const projects = [
     url: "https://deanlane.ca/pages/stellar-harvest-web/stellar-harvest.html",
     gitHub: "https://github.com/deanglane/stellar-harvest",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: true,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: stellar,
   },
   {
+    id: uuidv4(),
     date: "2023-08-01",
     title: "Battle Rockets",
     tag: `"Find and destroy the competitors ships to win the space race"`,
@@ -163,11 +181,16 @@ export const projects = [
       "https://github.com/Juno-Group3-project4/group3-project4-battle-rockets",
     github2: "https://github.com/deanglane/Battle-Rockets-Game.git",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: true,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: battleRockets,
   },
   {
+    id: uuidv4(),
     date: "2023-06-01",
     title: "Flash it!",
     tag: `"Build and review your own custom flash cards for studying"`,
@@ -209,11 +232,16 @@ export const projects = [
     url: "https://flash-it-app.netlify.app/",
     gitHub: "https://github.com/deanglane/dean-lane-flash-it-app",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: flashIt,
   },
   {
+    id: uuidv4(),
     date: "2023-04-25",
     title: "Pokedex",
     tag: `"Search hundreds of Pokemon stats in a custom CSS built original Gameboy"`,
@@ -253,11 +281,16 @@ export const projects = [
     url: "https://dean-lane-pokemon-app.netlify.app/",
     gitHub: "https://github.com/deanglane/pokemon-pokedex-app",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: pokedex,
   },
   {
+    id: uuidv4(),
     date: "2023-04-13",
     title: "Daily Horoscope",
     tag: `"Find out you past, present and future horoscopes based on your star sign"`,
@@ -299,11 +332,16 @@ export const projects = [
     url: "https://deanlane-dailyhoroscopeapp.netlify.app/",
     gitHub: "https://github.com/deanglane/horoscope-app/tree/main",
     status: "active",
-    highlight: false,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: horoscope,
   },
   {
+    id: uuidv4(),
     date: "2023-02-01",
     title: "Bar one",
     tag: `"A restaurant website where you can order from their menu or read their blog posts"`,
@@ -344,7 +382,11 @@ export const projects = [
     url: "https://deanlane-proj01-bar-one.netlify.app/",
     gitHub: "https://github.com/deanglane/bar-one",
     status: "active",
-    highlight: false,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: barOne,
   },
@@ -380,11 +422,16 @@ export const projects = [
     url: "https://deanlane-assign01-hungry-tummy.netlify.app/",
     gitHub: "https://github.com/deanglane/dean-lane-hangry-tummy",
     status: "active",
-    highlight: false,
+    highlight: {
+      display: false,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: hangryTummy,
   },
   {
+    id: uuidv4(),
     date: "2024-08-12",
     title: "Stopwatch",
     tag: `"A basic stop watch to track your times"`,
@@ -422,7 +469,11 @@ export const projects = [
     url: "https://stopwatch-dean-lane.netlify.app/",
     gitHub: "https://github.com/deanglane/stopwatch",
     status: "active",
-    highlight: true,
+    highlight: {
+      display: true,
+      summary:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
+    },
     featureReel: false,
     image: stopwatch,
   },

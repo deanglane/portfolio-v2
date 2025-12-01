@@ -52,7 +52,7 @@ function Home() {
         <section className={styles.hero}>
           <div className={styles.intro}>
             <h1>
-              On my day off, I like to <span>make things</span>.
+              On my day off, I like to <span>build things on the web</span>
             </h1>
             <p>
               Welcome to my cozy corner of the internet—where code simmers,

@@ -1,14 +1,25 @@
 import React from "react";
 import styles from "../routes/Projects.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import SliderCardDefault from "../components/SliderCardDefault";
+import SwiperGallery from "../components/SwiperGallery.jsx";
+
 import { projects } from "../data/projects.js";
 import ProjectCard from "../components/ProjectCard.jsx";
+
+// swiper library
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/effect-fade";
 
 function Projects() {
   const activeSorted = [...projects]
     .filter((p) => p.status.toLowerCase() === "active")
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  const highlightSorted = [...projects]
+    .filter((f) => f.highlight.display === true)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
@@ -19,30 +30,33 @@ function Projects() {
           “Turning coffee, curiosity and code into something visually amazing
           for the web.”
         </p>
-        <h2>Highlights</h2>
         {/* slider specials gallery */}
-        <div className={styles["specials-container"]}>
-          <div className={styles["specials-viewport"]}>
+        <SwiperGallery highlights={highlightSorted} />
+        {/* <div className={styles.slider_background}>
+          <div className={styles["slider-viewport"]}>
             <Swiper
-              modules={[Autoplay]}
+              modules={[Autoplay, Pagination, EffectFade]}
               spaceBetween={50}
               slidesPerView={1}
               loop={true}
+              effect={"fade"}
+              fadeEffect={{ crossFade: true }}
+              speed={1500}
+              pagination={{ dynamicBullets: false, clickable: true }}
               autoplay={{
-                delay: 5000,
+                delay: 1000,
                 pauseOnMouseEnter: true,
                 disableOnInteraction: false,
               }}
             >
-              <SwiperSlide>
-                <div>Slide 1</div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div>Slide 2</div>
-              </SwiperSlide>
+              {highlightSorted.map((project) => (
+                <SwiperSlide key={project.id}>
+                  <SliderCardDefault project={project} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div>
