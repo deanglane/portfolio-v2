@@ -77,13 +77,12 @@ export default function ErrorPage() {
         <div className={styles.terminalHeader}>⚠️ Debug Terminal Output</div>
         <pre className={styles.terminalBody}>
           {`Error Message:
-${message}`}
+          ${message}`}
         </pre>
       </div>
     </main>
   );
 }
-
 // import { useRouteError, isRouteErrorResponse, Link } from "react-router-dom";
 
 // export default function ErrorPage() {

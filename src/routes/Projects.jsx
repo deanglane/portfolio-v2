@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../routes/Projects.module.css";
-import SliderCardDefault from "../components/SliderCardDefault";
 import SwiperGallery from "../components/SwiperGallery.jsx";
 
 import { projects } from "../data/projects.js";
@@ -32,31 +31,6 @@ function Projects() {
         </p>
         {/* slider specials gallery */}
         <SwiperGallery highlights={highlightSorted} />
-        {/* <div className={styles.slider_background}>
-          <div className={styles["slider-viewport"]}>
-            <Swiper
-              modules={[Autoplay, Pagination, EffectFade]}
-              spaceBetween={50}
-              slidesPerView={1}
-              loop={true}
-              effect={"fade"}
-              fadeEffect={{ crossFade: true }}
-              speed={1500}
-              pagination={{ dynamicBullets: false, clickable: true }}
-              autoplay={{
-                delay: 1000,
-                pauseOnMouseEnter: true,
-                disableOnInteraction: false,
-              }}
-            >
-              {highlightSorted.map((project) => (
-                <SwiperSlide key={project.id}>
-                  <SliderCardDefault project={project} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div> */}
       </div>
 
       <div>

@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import FeatureCard from "../components/FeatureCard";
+import SwiperGallery from "../components/SwiperGallery.jsx";
 // Assets
 import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
 import flashIt from "../assets/images/screen-shots/flash_it_new.png";
 import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
-
+import { projects } from "../data/projects.js";
 const features = [
   {
     id: 1,
@@ -45,6 +46,9 @@ const features = [
 ];
 
 function Home() {
+  // const featuredSorted = [...projects]
+  //   .filter((f) => f.featured === true)
+  //   .sort((a, b) => b.date.localeCompare(a.date));
   return (
     <>
       <main className={"wrapper"}>
@@ -69,6 +73,7 @@ function Home() {
           </div>
 
           <div className={styles.feature_reel_container}>
+            {/* <SwiperGallery page={page} featured={featuredSorted} /> */}
             <div className={styles.card_background}>
               <div className={styles.card_foreground}>
                 <Swiper

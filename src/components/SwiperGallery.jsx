@@ -23,7 +23,7 @@ const SwiperGallery = ({ highlights }) => {
           speed={1500}
           pagination={{ dynamicBullets: false, clickable: true }}
           autoplay={{
-            delay: 1000,
+            delay: 5000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
           }}
