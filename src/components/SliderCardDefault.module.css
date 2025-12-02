@@ -15,7 +15,6 @@
 }
 
 .slide_right {
-  outline: 3px solid green;
   /* margin: 0 2rem; */
   overflow: hidden;
   height: 100%; /* NEW: fill card height */

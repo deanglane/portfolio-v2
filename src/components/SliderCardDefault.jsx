@@ -9,7 +9,7 @@ function SliderCardDefault({ project }) {
       <div className={styles.slide_left}>
         <h2>{project.title}</h2>
         <h3>{project.tag}</h3>
-        <p>{project.highlight.summary}</p>
+        <p>{project.summary}</p>
       </div>
       {/* right side */}
       <div className={styles.slide_right}>

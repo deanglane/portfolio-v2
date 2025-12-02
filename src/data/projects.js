@@ -25,16 +25,14 @@ export const projects = [
 
       `Think of it as a living creative playground. A place where I can show what I’ve built, what I’m learning, and everything I love making.`,
     ],
+    summary:
+      "A living portfolio built in React that showcases my growth as a developer and a creator. It brings together web projects, games, photography, art, cooking, music, and future experiments in one evolving playground for everything I build and learn. It’s hub for experiments, side projects, and growth!.",
     features: [],
     techStack: [],
     url: "https://dayoffdev.com",
     gitHub: "https://github.com/deanglane/portfolio-v2",
     status: "Active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: false,
     featureReel: false,
     image: portfolio,
   },
@@ -50,10 +48,12 @@ export const projects = [
 
       `It’s a small but addictive project that let me practice core Godot patterns like scenes, instancing, signals, and lightweight UI — all wrapped in a fun, fast-paced game.`,
     ],
+    summary:
+      "Tappy Plane is a Flappy Bird–style arcade game made in Godot with GDScript. I built tap-to-fly controls, parallax scrolling, lasers, scoring, high-score saving, and simple game states to practice 2D physics, collisions, UI, and replayable game loops. Built to explore feel, timing, polish, and flow.!",
     features: [
       "Built in Godot Engine using GDScript",
       "Player implemented as a 2D body with a CollisionShape2D and custom gravity / jump impulse",
-      "Tap / click input mapped to a custom flap action via the Input Map",
+      "click input mapped to a custom acceleration action via the Input Map",
       "Parallax background scrolling using ParallaxBackground and multiple ParallaxLayer nodes",
       "Endless level feel by moving pipes and ground across the screen instead of the camera",
       "Obstacles created as reusable scenes and spawned with instancing on a timer",
@@ -78,11 +78,7 @@ export const projects = [
     url: "",
     gitHub: "",
     status: "active",
-    highlight: {
-      display: true,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: true,
     featureReel: false,
     image: tappyPlane,
   },
@@ -98,6 +94,8 @@ export const projects = [
 
       `Stellar Harvest was a huge milestone for me as a developer. It was the first time I combined gameplay design, coding logic, and visual art into a single project. I plan to revisit it in the future and expand the mechanics with the new skills I’ve gained in game development.`,
     ],
+    summary:
+      "Stellar Harvest is a Pong-inspired arcade game where you pilot a freight ship to collect meteorites before they smash into your home planet. Built in Godot, it taught me physics, collision logic, scoring, random spawns, and creating custom pixel-art assets. A milestone mixing code, art, and design.!",
     features: [
       "Physics System - Basic gravity and velocity handling for meteorite movement and Adjustable speed curves for increasing difficulty",
       "Player Controls - Keyboard arrow key input for precise ship movement with Smooth horizontal acceleration and deceleration",
@@ -123,11 +121,7 @@ export const projects = [
     url: "https://deanlane.ca/pages/stellar-harvest-web/stellar-harvest.html",
     gitHub: "https://github.com/deanglane/stellar-harvest",
     status: "active",
-    highlight: {
-      display: true,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: true,
     featureReel: false,
     image: stellar,
   },
@@ -145,6 +139,8 @@ export const projects = [
 
       `Throughout the project, I gained a deeper understanding of React’s rendering patterns, debugging tools in the browser, teamwork with GitHub version control, and the process of building and merging features within a collaborative environment. Despite a few small quirks, Battle Rockets was a successful build that our whole team was proud of—and it pushed all of us to level up as front-end developers.`,
     ],
+    summary:
+      "Battle Rockets is a React strategy game that reimagines Battleship in space. Working as project manager and developer, I helped design the scope, build CSS Grid boards, drag-and-drop ship placement, NPC AI logic, and a full turn-based game loop in a team. It sharpened teamwork and React skills more.",
     features: [
       "Turn-based strategy gameplay inspired by Battleship",
       "Player vs AI mode with randomized NPC ship placement",
@@ -181,11 +177,7 @@ export const projects = [
       "https://github.com/Juno-Group3-project4/group3-project4-battle-rockets",
     github2: "https://github.com/deanglane/Battle-Rockets-Game.git",
     status: "active",
-    highlight: {
-      display: true,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: true,
     featureReel: false,
     image: battleRockets,
   },
@@ -201,6 +193,9 @@ export const projects = [
 
       `This project pushed me to think more deeply about how different components, data flows, and app features interact with each other. I plan to revisit Flash It in the future and expand it with a stronger UX flow, improved authentication handling, card previews and editing tools, and potentially rich text formatting for more expressive flashcards.`,
     ],
+    summary:
+      "Flash It is a React and Firebase study app where users sign in, create flashcard decks, and review them anywhere. I built auth-driven navigation, Firestore-powered storage, responsive layouts, and clean component logic without relying on extra UI libraries. It became my first app from idea to live.!",
+
     features: [
       "Create, edit, and review personalized flashcards",
       "User authentication with Firebase Auth",
@@ -232,11 +227,7 @@ export const projects = [
     url: "https://flash-it-app.netlify.app/",
     gitHub: "https://github.com/deanglane/dean-lane-flash-it-app",
     status: "active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: true,
     featureReel: false,
     image: flashIt,
   },
@@ -254,6 +245,9 @@ export const projects = [
 
       `This project strengthened my understanding of API architecture, dynamic rendering, and data fetching patterns. It also pushed me creatively—forcing me to stretch CSS in unusual ways to bring a physical retro device to life on the web. It definitely won’t be my last experiment with CSS art.`,
     ],
+    summary:
+      "The Pokédex app recreates a retro Game Boy using CSS while pulling live Pokémon data from the PokéAPI. Users can search Pokémon, view stats and evolutions, and explore sprites. I used JavaScript, REST APIs, and SCSS to manage dynamic data and detailed UI. It blends retro nostalgia with modern UI UX.",
+
     features: [
       "Browse all Pokémon using the PokéAPI REST API",
       "Fetch Pokémon data by name or ID",
@@ -281,11 +275,7 @@ export const projects = [
     url: "https://dean-lane-pokemon-app.netlify.app/",
     gitHub: "https://github.com/deanglane/pokemon-pokedex-app",
     status: "active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: false,
     featureReel: false,
     image: pokedex,
   },
@@ -301,6 +291,9 @@ export const projects = [
 
       `Unfortunately soon after launch the API went down and was no long available. I felt this app had a lot of cool features beyond the API call and was still worth showcasing here in my portfolio.`,
     ],
+    summary:
+      "The Daily Horoscope app lets users discover their zodiac sign, then view yesterday, today, and tomorrow readings. It combines custom UI, date-based zodiac logic, smooth transitions, and API-driven content to create a polished, animated horoscope experience. It shows how logic, motion, APIs shape UX.",
+
     features: [
       "Determine zodiac sign based on user-selected birth date",
       "Select birth date using a guided modal interface",
@@ -332,11 +325,7 @@ export const projects = [
     url: "https://deanlane-dailyhoroscopeapp.netlify.app/",
     gitHub: "https://github.com/deanglane/horoscope-app/tree/main",
     status: "active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: false,
     featureReel: false,
     image: horoscope,
   },
@@ -352,6 +341,9 @@ export const projects = [
 
       `This project taught me how to wire up DOM events, work with arrays and reduce() for totals, manipulate the DOM to render dynamic content, and debug using the browser console. Bar One was one of the first times I designed my own JavaScript flows rather than following a tutorial, and it became a key milestone in understanding how state and UI work together`,
     ],
+    summary:
+      "Bar One is a multi-page bar and restaurant site rebuilt from a PDF mockup. I focused on semantic HTML, responsive CSS, and a custom JavaScript ordering flow with modals, a live-updating cart, and price calculations to connect UI design with real interactions. It bridged mockups with interactions UI.",
+
     features: [
       "Multi-page bar and restaurant website built from a PDF mockup",
       "Responsive layout with semantic HTML structure",
@@ -382,11 +374,7 @@ export const projects = [
     url: "https://deanlane-proj01-bar-one.netlify.app/",
     gitHub: "https://github.com/deanglane/bar-one",
     status: "active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: false,
     featureReel: false,
     image: barOne,
   },
@@ -400,6 +388,9 @@ export const projects = [
 
       `Beyond just matching the design, this project taught me how to think more like a front-end developer: balancing visual fidelity with clean HTML structure, using flexbox for layout instead of absolute positioning, and keeping accessibility and client-style constraints in mind—all under a tight deadline.`,
     ],
+    summary:
+      "Hangry Tummy is a single-page restaurant landing built from a PDF and style guide. Using HTML and CSS, I recreated the layout with responsive flexbox, mobile navigation, and clean structure, learning how to match real client designs under time pressure. It helped me practice flexbox layouts, menus.!",
+
     features: [
       "Pixel-inspired conversion from PDF mockup and style guide",
       "Responsive single-page restaurant landing layout",
@@ -422,11 +413,7 @@ export const projects = [
     url: "https://deanlane-assign01-hungry-tummy.netlify.app/",
     gitHub: "https://github.com/deanglane/dean-lane-hangry-tummy",
     status: "active",
-    highlight: {
-      display: false,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: false,
     featureReel: false,
     image: hangryTummy,
   },
@@ -444,6 +431,9 @@ export const projects = [
 
       `The challenge strengthened my confidence in React’s architecture, formal development processes, and writing maintainable, production-quality code.`,
     ],
+    summary:
+      "The Shopify Stopwatch Challenge is a React and TypeScript app that times sessions, records laps, and resets cleanly. I wrote typed components, precise timing logic, and Jest tests with React Testing Library to verify behavior and follow real dev workflows. It pushed me into TypeScript and testing.",
+
     features: [
       "Start and stop stopwatch functionality using typed React state",
       "Reset button that clears time back to zero",
@@ -469,11 +459,7 @@ export const projects = [
     url: "https://stopwatch-dean-lane.netlify.app/",
     gitHub: "https://github.com/deanglane/stopwatch",
     status: "active",
-    highlight: {
-      display: true,
-      summary:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis facilis, incidunt modi accusamus porro earum maiores rerum illo vel nostrum eius culpa amet delectus impedit qui! Porro earum modi soluta at sunt asperiores est cumque suscipit minus totam, quisquam repellat consequatur eligendi commodi officia! Repellendus, iste. Animi, deleniti fugit?",
-    },
+    highlight: true,
     featureReel: false,
     image: stopwatch,
   },

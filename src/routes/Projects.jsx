@@ -18,7 +18,7 @@ function Projects() {
     .sort((a, b) => b.date.localeCompare(a.date));
 
   const highlightSorted = [...projects]
-    .filter((f) => f.highlight.display === true)
+    .filter((f) => f.highlight === true)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
