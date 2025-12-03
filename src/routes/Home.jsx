@@ -5,10 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import FeatureCard from "../components/FeatureCard";
 import SwiperGallery from "../components/SwiperGallery.jsx";
-// Assets
-import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
-import flashIt from "../assets/images/screen-shots/flash_it_new.png";
-import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
+
 import { featured } from "../data/featured.js";
 
 function Home() {
@@ -17,10 +14,10 @@ function Home() {
   //   .sort((a, b) => b.date.localeCompare(a.date));
   return (
     <>
-      <main className={"wrapper"}>
+      <main>
         {/* hero image */}
         <section className={styles.hero}>
-          <div className={styles.intro}>
+          <div className={`${styles.intro} ${"wrapper"}`}>
             <h1>
               On my day off, I like to <span>build things on the web</span>
             </h1>
@@ -38,8 +35,8 @@ function Home() {
             </div>
           </div>
 
+          {/* <SwiperGallery page={page} featured={featuredSorted} /> */}
           <div className={styles.feature_reel_container}>
-            {/* <SwiperGallery page={page} featured={featuredSorted} /> */}
             <div className={styles.card_background}>
               <div className={styles.card_foreground}>
                 <Swiper

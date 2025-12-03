@@ -1,4 +1,8 @@
-export const projects = [
+import pokedex from "../assets/images/screen-shots/pokemon_pokedex_app_new.png";
+import flashIt from "../assets/images/screen-shots/flash_it_new.png";
+import hangryTummy from "../assets/images/screen-shots/hangry_tummy.png";
+
+export const featured = [
   {
     id: 1,
     title: "Pokedex",
