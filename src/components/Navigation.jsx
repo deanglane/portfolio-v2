@@ -60,6 +60,9 @@ function Navigation() {
         <li>
           <NavLink to="/workshop">workshop</NavLink>
         </li>
+        <li>
+          <NavLink to="/game">Tappy Plane</NavLink>
+        </li>
       </ul>
     </nav>
   );

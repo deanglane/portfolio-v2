@@ -75,7 +75,7 @@ export const projects = [
       "CSS3 — styling and responsive layout",
       "JavaScript (ES6+) — functionality and app logic",
     ],
-    url: "",
+    url: "../games/tappy-plane/tappy-plane.html",
     gitHub: "",
     status: "active",
     highlight: true,

@@ -14,6 +14,7 @@ import Teckstack from "./routes/Techstack.jsx";
 import Blog from "./routes/Blog.jsx";
 import Contact from "./routes/Contact.jsx";
 import Workshop from "./routes/Workshop.jsx";
+import Game from "./components/TestComponent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: "blog", element: <Blog /> },
       { path: "contact", element: <Contact /> },
       { path: "workshop", element: <Workshop /> },
+      { path: "game", element: <Game /> },
     ],
   },
 ]);
