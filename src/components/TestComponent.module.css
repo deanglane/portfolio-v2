@@ -13,4 +13,9 @@
   width: 100%;
   height: 100%;
   border: 8px solid black;
+  border-radius: 10px;
+}
+
+.pStyle {
+  font-size: 1.25rem;
 }

@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./ProjectCard.module.css";
 
 function ProjectCard({ isLeft, project }) {
-  // check if the projects object as a feature section and a tech stack section
+  // check if the projects object has a feature section and a tech stack section
+  // This is prevents a page error if one of the array items does not contain the same item as others. Since each object in the array will be built identically this code is redundant but nice to have
   const hasFeatures = project.features && project.features.length > 0;
   const hasTechStack = project.techStack && project.techStack.length > 0;
 
@@ -11,6 +12,10 @@ function ProjectCard({ isLeft, project }) {
   const year = date.getFullYear();
   const month = date.toLocaleString("en-US", { month: "long" }).toUpperCase();
   const formattedDate = `${year} - ${month}`;
+
+  // const internalRefSorted = [...project].filter(
+  //   (g) => g.urlRef.internalRoute === true
+  // );
 
   // Project cell for descriptions, images and buttons
   const supportCell = (
@@ -25,10 +30,11 @@ function ProjectCard({ isLeft, project }) {
       <div>
         <img src={project.image} alt="yep I'll do this one day" />
       </div>
+
       <div className={styles.buttonContainer}>
         <a
           className={"button"}
-          href={project.url}
+          href={project.urlRef.url}
           target="_blank"
           rel="noopener noreferrer"
         >
