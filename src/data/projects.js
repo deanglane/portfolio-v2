@@ -51,8 +51,7 @@ export const projects = [
 
       `It’s a small but addictive project that let me practice core Godot patterns like scenes, instancing, signals, and lightweight UI — all wrapped in a fun, fast-paced game.`,
     ],
-    summary:
-      "Tappy Plane is a Flappy Bird–style arcade game made in Godot with GDScript. I built tap-to-fly controls, parallax scrolling, lasers, scoring, high-score saving, and simple game states to practice 2D physics, collisions, UI, and replayable game loops. Built to explore feel, timing, polish, and flow.!",
+    summary: `Tappy Plane is a Flappy Bird–style arcade game made in Godot with GDScript. I built tap-to-fly controls, parallax scrolling, lasers, scoring, high-score saving, and simple game states to practice 2D physics, collisions, UI, and replayable game loops. Built to explore feel, timing, polish, and flow.!`,
     features: [
       "Built in Godot Engine using GDScript",
       "Player implemented as a 2D body with a CollisionShape2D and custom gravity / jump impulse",
