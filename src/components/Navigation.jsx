@@ -52,9 +52,6 @@ function Navigation() {
           <NavLink to="/techstack">tech stack</NavLink>
         </li>
         <li>
-          <NavLink to="/blog">blog</NavLink>
-        </li>
-        <li>
           <NavLink to="/contact">contact</NavLink>
         </li>
         <li>

@@ -85,7 +85,7 @@ export const projects = [
     gitHub: "",
     status: "active",
     highlight: true,
-    featureReel: false,
+    featureReel: true,
     image: tappyPlane,
   },
   {
@@ -131,7 +131,7 @@ export const projects = [
     gitHub: "https://github.com/deanglane/stellar-harvest",
     status: "active",
     highlight: true,
-    featureReel: false,
+    featureReel: true,
     image: stellar,
   },
   {
@@ -490,7 +490,7 @@ export const projects = [
     gitHub: "https://github.com/deanglane/stopwatch",
     status: "active",
     highlight: true,
-    featureReel: false,
+    featureReel: true,
     image: stopwatch,
   },
 ];

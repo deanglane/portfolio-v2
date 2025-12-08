@@ -5,13 +5,6 @@ import SwiperGallery from "../components/SwiperGallery.jsx";
 import { projects } from "../data/projects.js";
 import ProjectCard from "../components/ProjectCard.jsx";
 
-// swiper library
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Pagination, EffectFade } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
-
 function Projects() {
   const activeSorted = [...projects]
     .filter((p) => p.status.toLowerCase() === "active")
@@ -30,7 +23,7 @@ function Projects() {
           for the web.”
         </p>
         {/* slider specials gallery */}
-        <SwiperGallery highlights={highlightSorted} />
+        <SwiperGallery pageGallery={highlightSorted} />
       </div>
 
       <div>

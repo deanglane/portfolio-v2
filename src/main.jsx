@@ -11,7 +11,6 @@ import Home from "./routes/Home.jsx";
 import Projects from "./routes/Projects.jsx";
 import About from "./routes/About.jsx";
 import Teckstack from "./routes/Techstack.jsx";
-import Blog from "./routes/Blog.jsx";
 import Contact from "./routes/Contact.jsx";
 import Workshop from "./routes/Workshop.jsx";
 import Game from "./components/TestComponent.jsx";
@@ -26,7 +25,6 @@ const router = createBrowserRouter([
       { path: "projects", element: <Projects /> },
       { path: "about", element: <About /> },
       { path: "techstack", element: <Teckstack /> },
-      { path: "blog", element: <Blog /> },
       { path: "contact", element: <Contact /> },
       { path: "workshop", element: <Workshop /> },
       { path: "game", element: <Game /> },

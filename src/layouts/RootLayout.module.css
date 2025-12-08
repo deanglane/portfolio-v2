@@ -1,5 +1,4 @@
 .layout {
-  /* ? what is svh? */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

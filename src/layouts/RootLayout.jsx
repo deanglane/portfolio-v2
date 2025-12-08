@@ -20,4 +20,3 @@ function RootLayout() {
 }
 
 export default RootLayout;
-9;

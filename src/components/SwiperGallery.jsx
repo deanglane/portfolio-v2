@@ -9,9 +9,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-const SwiperGallery = ({ highlights }) => {
+const SwiperGallery = ({ pageGallery }) => {
   return (
-    <div className={styles.slider_background}>
+    <div className={`${styles.slider_background} ${"wrapper"}`}>
       <div className={styles["slider-viewport"]}>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -28,7 +28,7 @@ const SwiperGallery = ({ highlights }) => {
             disableOnInteraction: false,
           }}
         >
-          {highlights.map((project) => (
+          {pageGallery.map((project) => (
             <SwiperSlide key={project.id}>
               <SliderCardDefault project={project} />
             </SwiperSlide>
